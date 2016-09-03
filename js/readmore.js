@@ -1,5 +1,7 @@
 $(function(){ /* to make sure the script runs after page load */
 
+	$(".more_text").css("display", "none");
+
 	$('.item').each(function(event){ /* select all divs with the item class */
 	
 		var max_length = 150; /* set the max content length before a read more link will be added */
