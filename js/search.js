@@ -14,7 +14,7 @@ function showHiddenTeams() {
         hiddenTeamsSpan.style.display = 'block';
         seeTeams.style.display = 'none';
         for (i = 0; i < teamsArray.length; i++) {
-            if(teamsArray[i].children[1].children[0].innerHTML.toLowerCase().includes(searchBar.value.toLowerCase())){
+            if(teamsArray[i].children[1].children[0].innerHTML.toLowerCase().includes(searchBar.value.toLowerCase()) || teamsArray[i].children[1].children[2].innerHTML.toLowerCase().includes(searchBar.value.toLowerCase())){
                 teamsArray[i].style.display = 'block';
             }
             else{
