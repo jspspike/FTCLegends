@@ -28,7 +28,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <link href="css/text.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="img/favicon/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="img/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+	<link rel="apple-touch-icon" href="img/favicon/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 </head>
 
 <script>
@@ -100,7 +122,7 @@
 
     <!-- Ranking section -->
     <section id="ranking">
-        <div class="container">
+        <div class="container" id="mainContainer">
             <div class="row">
                 <div class="col-lg-12 text-center">
                  <h2>Rankings</h2>
@@ -108,7 +130,32 @@
                 </div>
             </div>
             
-            <div class="bs-example" data-example-id="default-media"> 
+            <style> 
+                input[type=text] {
+                    width: 220px;
+                    box-sizing: border-box;
+                    border: 2px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    background-color: white;
+                    background-image: url('searchicon.png');
+                    background-position: 10px 10px; 
+                    background-repeat: no-repeat;
+                    padding: 12px 20px 12px 40px;
+                    -webkit-transition: width 0.4s ease-in-out;
+                    transition: width 0.4s ease-in-out;
+                    margin-bottom: 50px;
+                    }
+
+                    input[type=text]:focus {
+                        width: 100%;
+                    }
+            </style>
+            <!--▲ -->
+            <form id="searchForm">
+                <input type="text" id="search" name="searchBar" placeholder="Search Teams.." onkeyup="showHiddenTeams()" onchange="showHiddenTeams()">
+            </form>
+            
             <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -126,9 +173,7 @@
                         <p>5th place alliance (2nd Pick) - 2011</p>
                     </div>
                 </div>
-            </div>
             
-            <div class="bs-example" data-example-id="default-media"> 
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -145,7 +190,56 @@
                         <p>1st place alliance (1st Pick) - 2012</p>
                     </div>
                 </div>
-            </div>
+            
+            <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8221.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8221 Cubix^3 <em>▲2</em></h3> 
+                        <h4>138 Points</h4>
+                        <h5>Maryland</h5>
+                        <p>4th place alliance (Captain) - 2017</p>
+                        <p>1st place alliance (1st Pick) - 2016</p>
+                        <p>5th place alliance (1st Pick) - 2015</p>
+                        <p>5th place alliance (Captain) - 2014</p>
+                    </div>
+                </div>
+            
+            <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7013.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7013 Hot Wired <em>▲2</em></h3> 
+                        <h4>121 Points</h4>
+                        <h5>Oregon</h5>
+                        <p>7th place alliance (Captain) - 2017</p>
+                        <p>2nd place alliance (1st Pick) - 2016</p>
+                        <p>6th place alliance (2nd Pick) - 2015</p>
+                        <p>1st place alliance (Captain) - 2014</p>
+                    </div>
+                </div>
+            
+            <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">724 RedNek Robotics Wun <em>▲7</em></h3> 
+                        <h4>118 Points</h4>
+                        <h5>Montana</h5>
+                        <p>1st place alliance (Captain) - 2017</p>
+                        <p>1st place alliance (1st Pick) - 2015</p>
+                        <p>2nd place alliance (1st Pick) - 2014</p>
+                    </div>
+                </div>
             
             <div class="media"> 
                     <div class="media-left"> 
@@ -177,38 +271,6 @@
                         <p>5th place alliance (1st Pick) - 2016</p>
                         <p>3rd place alliance (1st Pick) - 2015</p>
                         <p>3rd place alliance (1st Pick) - 2014</p>
-                    </div>
-                </div>
-            
-            <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8221.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">8221 Cubix^3</h3> 
-                        <h4>104 Points</h4>
-                        <h5>Maryland</h5>
-                        <p>1st place alliance (1st Pick) - 2016</p>
-                        <p>5th place alliance (1st Pick) - 2015</p>
-                        <p>5th place alliance (Captain) - 2014</p>
-                    </div>
-                </div>
-            
-            <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7013.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">7013 Hot Wired</h3> 
-                        <h4>93 Points</h4>
-                        <h5>Oregon</h5>
-                        <p>2nd place alliance (1st Pick) - 2016</p>
-                        <p>6th place alliance (2nd Pick) - 2015</p>
-                        <p>1st place alliance (Captain) - 2014</p>
                     </div>
                 </div>
             
@@ -260,6 +322,30 @@
                     </div>
                 </div>
             
+
+          <div class="item" id="hiddenTeams">
+            <a href="#" class="read_more" id="SeeTeams" name="seeTeams">
+              <h1>See all teams</h1>
+            </a><br/>
+
+            <span class="more_text", id="hiddenSpan", name="hiddenSpan">
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4029.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">4029 2 Bits and a Byte <em>▲6</em></h3> 
+                        <h4>83 Points</h4>
+                        <h5>Massachusetts</h5>
+                        <p>14th place alliance (Captain) - 2017</p>
+                        <p>7th place alliance (Captain) - 2016</p>
+                        <p>6th place alliance (2nd Pick) - 2014</p>
+                        <p>8th place alliance (Captain) - 2012</p>
+                    </div>
+                </div>
+            
             <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -275,29 +361,37 @@
                         <p>6th place alliance (2nd Pick) - 2012</p>
                     </div>
                 </div>
-
-          <div class="item">
-            <a href="#" class="read_more">
-              <h1>See all teams</h1>
-              </a><br/>
-
-            <span class="more_text">
                 
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/6022.jpeg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a>
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">6022 TBD - To Be Determined <em>▲14</em></h3> 
+                        <h4>76 Points</h4>
+                        <h5>Ohio</h5>
+                        <p>12th place alliance (1st Pick) - 2017</p>
+                        <p>1st place alliance (2nd Pick) - 2016</p>
+                        <p>2nd place alliance (Captain) - 2015</p>
+                    </div>
+                </div>
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5916.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
                     <div class="media-body"> 
-                        <h3 class="media-heading">724 RedNek Robotics Wun</h3> 
-                        <h4>78 Points</h4>
-                        <h5>Montana</h5>
-                        <p>1st place alliance (1st Pick) - 2015</p>
-                        <p>2nd place alliance (1st Pick) - 2014</p>
+                        <h3 class="media-heading">5916 BoBots <em>▲10</em></h3> 
+                        <h4>76 Points</h4>
+                        <h5>Maryland</h5>
+                        <p>2nd place alliance (2nd Pick) - 2017</p>
+                        <p>1st place alliance (Captain) - 2016</p>
+                        <p>4th place alliance (2nd Pick) - 2015</p>
                     </div>
                 </div>
-                
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -377,22 +471,6 @@
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4029.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">4029 2 Bits and a Byte</h3> 
-                        <h4>69 Points</h4>
-                        <h5>Massachusetts</h5>
-                        <p>7th place alliance (Captain) - 2016</p>
-                        <p>6th place alliance (2nd Pick) - 2014</p>
-                        <p>8th place alliance (Captain) - 2012</p>
-                    </div>
-                </div>
-                
-                <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/2803.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -417,6 +495,36 @@
                         <h5>Florida</h5>
                         <p>8th place alliance (1st Pick) - 2015</p>
                         <p>1st place alliance (1st Pick) - 2014</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5843.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5843 AutoVortex <em>▲25</em></h3> 
+                        <h4>64 Points</h4>
+                        <h5>Romania</h5>
+                        <p>6th place alliance (1st Pick) - 2017</p>
+                        <p>4th place alliance (1st Pick) - 2016</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8644.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8644 The Brainstormers <em>▲46</em></h3> 
+                        <h4>62 Points</h4>
+                        <h5>Massachusetts</h5>
+                        <p>4th place alliance (1st Pick) - 2017</p>
+                        <p>7th place alliance (1st Pick) - 2016</p>
                     </div>
                 </div>
                 
@@ -450,6 +558,21 @@
                     </div>
                 </div>
                 
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">3705 Porhtal</h3> 
+                        <h4>62 Points</h4>
+                        <h5>Alaska</h5>
+                        <p>4th place alliance (Captain) - 2012</p>
+                        <p>3rd place alliance (2nd Pick) - 2011</p>
+                    </div>
+                </div>
+                
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
@@ -462,36 +585,6 @@
                         <h5>Washington</h5>
                         <p>4th place alliance (1st Pick) - 2012</p>
                         <p>8th place alliance (Captain) - 2011</p>
-                    </div>
-                </div>
-                
-                <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/6022.jpeg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a>
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">6022 TBD - To Be Determined</h3> 
-                        <h4>58 Points</h4>
-                        <h5>Ohio</h5>
-                        <p>1st place alliance (2nd Pick) - 2016</p>
-                        <p>2nd place alliance (Captain) - 2015</p>
-                    </div>
-                </div>
-                
-                <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5916.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">5916 BoBots</h3> 
-                        <h4>57 Points</h4>
-                        <h5>Maryland</h5>
-                        <p>1st place alliance (Captain) - 2016</p>
-                        <p>4th place alliance (2nd Pick) - 2015</p>
                     </div>
                 </div>
                 
@@ -513,15 +606,15 @@
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4174.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
                     <div class="media-body"> 
-                        <h3 class="media-heading">3705 Porhtal</h3> 
-                        <h4>62 Points</h4>
-                        <h5>Alaska</h5>
-                        <p>4th place alliance (Captain) - 2012</p>
-                        <p>3rd place alliance (2nd Pick) - 2011</p>
+                        <h3 class="media-heading">4174 Atomic Theory<em>▲61</em></h3> 
+                        <h4>49 Points</h4>
+                        <h5>New York</h5>
+                        <p>6th place alliance (Captain) - 2017</p>
+                        <p>2nd place alliance (2nd Pick) - 2015</p>
                     </div>
                 </div>
                 
@@ -543,6 +636,21 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4211.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">4211 The Bombers <em>▲61</em></h3> 
+                        <h4>44 Points</h4>
+                        <h5>Missouri</h5>
+                        <p>8th place alliance (1st Pick) - 2017</p>
+                        <p>3rd place alliance (2nd Pick) - 2014</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3509.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -552,6 +660,51 @@
                         <h5>California</h5>
                         <p>5th place alliance (2nd Pick) - 2013</p>
                         <p>7th place alliance (1st Pick) - 2011</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3537.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">3537 The Mecha-Hampsters <em>▲33</em></h3> 
+                        <h4>43 Points</h4>
+                        <h5>Indiana</h5>
+                        <p>8th place alliance (2nd Pick) - 2017</p>
+                        <p>6th place alliance (Captain) - 2013</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3595.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">3595 Schrodinger's Hat <em>▲52</em></h3> 
+                        <h4>43 Points</h4>
+                        <h5>Alaska</h5>
+                        <p>9th place alliance (Captain) - 2017</p>
+                        <p>2nd place alliance (2nd Pick) - 2016</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5064.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5064 Aperture Science <em>▲42</em></h3> 
+                        <h4>42 Points</h4>
+                        <h5>North Carolina</h5>
+                        <p>13th place alliance (1st Pick) - 2017</p>
+                        <p>8th place alliance (Captain) - 2016</p>
                     </div>
                 </div>
                 
@@ -588,6 +741,20 @@
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4216.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">4216 Rise of Hephaestus</h3> 
+                        <h4>40 Points</h4>
+                        <h5>California</h5>
+                        <p>1st place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4140.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -612,6 +779,7 @@
                         <p>1st place alliance (Captain) - 2012</p>
                     </div>
                 </div>
+                
                 
                 <div class="media"> 
                     <div class="media-left"> 
@@ -652,6 +820,34 @@
                         <h4>40 Points</h4>
                         <h5>Maryland</h5>
                         <p>1st place alliance (1st Pick) - 2010</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8686.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8686 Height Differential</h3> 
+                        <h4>38 Points</h4>
+                        <h5>Minnesota</h5>
+                        <p>2nd place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/6929.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">6929 Data Force</h3> 
+                        <h4>38 Points</h4>
+                        <h5>Colorado</h5>
+                        <p>2nd place alliance (1st Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -725,6 +921,34 @@
                     </div>
                 </div>
                 
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/9915.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">9915 Robo Thunder</h3> 
+                        <h4>36 Points</h4>
+                        <h5>Washington</h5>
+                        <p>3rd place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4717.jpeg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">4717 Mechromancers</h3> 
+                        <h4>36 Points</h4>
+                        <h5>Florida</h5>
+                        <p>3rd place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -794,20 +1018,6 @@
                         <p>4th place alliance (Captain) - 2016</p>
                     </div>
                 </div>
-
-                <div class="media">
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5843.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">5843 AutoVortex</h3> 
-                        <h4>34 Points</h4>
-                        <h5>Romania</h5>
-                        <p>4th place alliance (1st Pick) - 2016</p>
-                    </div>
-                </div>
                 
                 <div class="media">
                     <div class="media-left"> 
@@ -849,6 +1059,34 @@
                         <h5>Michigan</h5>
                         <p>4th place alliance (2nd Pick) - 2013</p>
                         <p>6th place alliance (2nd Pick) - 2010</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3480.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">3480 FrostByte</h3> 
+                        <h4>32 Points</h4>
+                        <h5>Alaska</h5>
+                        <p>5th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7477.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7477 Super 7</h3> 
+                        <h4>32 Points</h4>
+                        <h5>Florida</h5>
+                        <p>5th place alliance (1st Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -1038,20 +1276,6 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3537.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">3537 The Mecha-Hampsters</h3> 
-                        <h4>30 Points</h4>
-                        <h5>Indiana</h5>
-                        <p>6th place alliance (Captain) - 2013</p>
-                    </div>
-                </div>
-                
-                <div class="media">
-                    <div class="media-left"> 
-                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4147.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -1108,14 +1332,14 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8644.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
                     <div class="media-body"> 
-                        <h3 class="media-heading">8644 The Brainstormers</h3> 
+                        <h3 class="media-heading">8045 Gromit's Grommets</h3> 
                         <h4>28 Points</h4>
-                        <h5>Massachusetts</h5>
-                        <p>7th place alliance (1st Pick) - 2016</p>
+                        <h5>Oregon</h5>
+                        <p>7th place alliance (1st Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -1220,14 +1444,14 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5064.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/10294.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
                     <div class="media-body"> 
-                        <h3 class="media-heading">5064 Aperture Science</h3> 
+                        <h3 class="media-heading">10294 The Edge</h3> 
                         <h4>26 Points</h4>
-                        <h5>North Carolina</h5>
-                        <p>8th place alliance (Captain) - 2016</p>
+                        <h5>Wisconsin</h5>
+                        <p>8th place alliance (Captain) - 2017</p>
                     </div>
                 </div>
                 
@@ -1329,17 +1553,87 @@
                     </div>
                 </div>
                 
-                <div class="media"> 
+                <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/2844.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/9899.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
                     <div class="media-body"> 
-                        <h3 class="media-heading">2844 Valley X</h3> 
+                        <h3 class="media-heading">9899 Black Diamond Robotics</h3> 
+                        <h4>24 Points</h4>
+                        <h5>Colorado</h5>
+                        <p>9th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7129.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7129 Robo Raiders</h3> 
+                        <h4>22 Points</h4>
+                        <h5>Illinois</h5>
+                        <p>10th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7244.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7244 OUT of the BOX</h3> 
+                        <h4>22 Points</h4>
+                        <h5>Pennsylvania</h5>
+                        <p>10th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8565.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8565 TechnicBots</h3> 
                         <h4>20 Points</h4>
-                        <h5>Arizona</h5>
-                        <p>1st place alliance (2nd Pick) - 2015</p>
+                        <h5>Texas</h5>
+                        <p>11th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/731.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">731 Wannabee Strange</h3> 
+                        <h4>20 Points</h4>
+                        <h5>North Carolina</h5>
+                        <p>11th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8651.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8651 Wait For It...</h3> 
+                        <h4>20 Points</h4>
+                        <h5>Mississippi</h5>
+                        <p>1st place alliance (2nd Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -1402,34 +1696,6 @@
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3595.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">3595 Schrodinger's Hat</h3> 
-                        <h4>19 Points</h4>
-                        <h5>Alaska</h5>
-                        <p>2nd place alliance (2nd Pick) - 2016</p>
-                    </div>
-                </div>
-                
-                <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4174.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">4174 Atomic Theory</h3> 
-                        <h4>19 Points</h4>
-                        <h5>New York</h5>
-                        <p>2nd place alliance (2nd Pick) - 2015</p>
-                    </div>
-                </div>
-                
-                <div class="media"> 
-                    <div class="media-left"> 
-                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4318.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -1483,6 +1749,34 @@
                     </div>
                 </div>
                 
+                <div class="media"> 
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8393.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8393 BrainSTEM</h3> 
+                        <h4>18 Points</h4>
+                        <h5>Pennsylvania</h5>
+                        <p>12th place alliance (Captain) - 2014</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7203.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7203 KNO3</h3> 
+                        <h4>18 Points</h4>
+                        <h5>Florida</h5>
+                        <p>3rd place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
@@ -1494,20 +1788,6 @@
                         <h4>18 Points</h4>
                         <h5>New Jersey</h5>
                         <p>3rd place alliance (2nd Pick) - 2015</p>
-                    </div>
-                </div>
-                
-                <div class="media">
-                    <div class="media-left"> 
-                        <a href="#"> 
-                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/4211.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
-                        </a> 
-                    </div> 
-                    <div class="media-body"> 
-                        <h3 class="media-heading">4211 The Bombers</h3> 
-                        <h4>18 Points</h4>
-                        <h5>Missouri</h5>
-                        <p>3rd place alliance (2nd Pick) - 2014</p>
                     </div>
                 </div>
                 
@@ -1536,6 +1816,20 @@
                         <h4>18 Points</h4>
                         <h5>California</h5>
                         <p>3rd place alliance (2nd Pick) - 2010</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/7182.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7182 Mechanical Paradox</h3> 
+                        <h4>17 Points</h4>
+                        <h5>Maryland</h5>
+                        <p>4th place alliance (2nd Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -1598,6 +1892,34 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">11572 Mouse Spit</h3> 
+                        <h4>16 Points</h4>
+                        <h5>Oklahoma</h5>
+                        <p>13th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">11168 The Quantum Mechanics</h3> 
+                        <h4>16 Points</h4>
+                        <h5>Alaska</h5>
+                        <p>5th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3781.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -1654,6 +1976,20 @@
                 <div class="media">
                     <div class="media-left"> 
                         <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/8645.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">8645 Robotic Doges</h3> 
+                        <h4>15 Points</h4>
+                        <h5>Pennsylvania</h5>
+                        <p>6th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
                             <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/9804.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
                         </a> 
                     </div> 
@@ -1690,6 +2026,34 @@
                         <h4>15 Points</h4>
                         <h5>Florida</h5>
                         <p>6th place alliance (2nd Pick) - 2011</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5414.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5414 Tri Robotics</h3> 
+                        <h4>14 Points</h4>
+                        <h5>Virginia</h5>
+                        <p>14th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5220 RobotKnights</h3> 
+                        <h4>14 Points</h4>
+                        <h5>California</h5>
+                        <p>7th place alliance (2nd Pick) - 2017</p>
                     </div>
                 </div>
                 
@@ -1846,6 +2210,174 @@
                         <p>8th place alliance (2nd Pick) - 2010</p>
                     </div>
                 </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5667.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5667 Robominers</h3> 
+                        <h4>12 Points</h4>
+                        <h5>Utah</h5>
+                        <p>15th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5843.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">11058 AutoVortex Transilvania</h3> 
+                        <h4>12 Points</h4>
+                        <h5>Romania</h5>
+                        <p>15th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/10298.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">10298 Brain Stormz</h3> 
+                        <h4>12 Points</h4>
+                        <h5>California</h5>
+                        <p>9th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/9794.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">9794 Wizards.exe</h3> 
+                        <h4>11 Points</h4>
+                        <h5>Maryland</h5>
+                        <p>10th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/3409.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">3409 Astromechs</h3> 
+                        <h4>10 Points</h4>
+                        <h5>Missouri</h5>
+                        <p>16th place alliance (Captain) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">7236 Recharged Green</h3> 
+                        <h4>10 Points</h4>
+                        <h5>Iowa</h5>
+                        <p>16th place alliance (1st Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/10345.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">10345 Royal Blue</h3> 
+                        <h4>10 Points</h4>
+                        <h5>Florida</h5>
+                        <p>11th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/5040.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">5040 Loveland Nuts & Bolts</h3> 
+                        <h4>9 Points</h4>
+                        <h5>Ohio</h5>
+                        <p>12th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/6990.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">6990 Static Void</h3> 
+                        <h4>8 Points</h4>
+                        <h5>Texas</h5>
+                        <p>13th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">12529 KTM</h3> 
+                        <h4>7 Points</h4>
+                        <h5>Russia</h5>
+                        <p>14th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/teams/10092.jpg" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">10092 Green.Griffins</h3> 
+                        <h4>6 Points</h4>
+                        <h5>California</h5>
+                        <p>15th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <div class="media-left"> 
+                        <a href="#"> 
+                            <img alt="64x64" class="media-object" data-src="holder.js/64x64" src="img/unknown.png" data-holder-rendered="true" style="width: 64px; height: 64px;"> 
+                        </a> 
+                    </div> 
+                    <div class="media-body"> 
+                        <h3 class="media-heading">11453 Uncertainty Principle</h3> 
+                        <h4>5 Points</h4>
+                        <h5>New York</h5>
+                        <p>16th place alliance (2nd Pick) - 2017</p>
+                    </div>
+                </div>
             </span>
 
             </div>
@@ -1865,6 +2397,16 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal0" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img style="height: 260px;" src="img/events/2017.png" class="img-responsive" alt="">
+                    </a>
+                </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -1952,10 +2494,10 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/florida.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/florida.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Florida</h3>
-                                <h4>392 points</h4>
+                                <h4>488 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>4997 Masquerade (146)</p>
                                 <p>6433 Neutrinos (74)</p>
@@ -1967,7 +2509,40 @@
                     </div>
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newjersey.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/maryland.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                            <div class="caption"> 
+                                <h3>Maryland <em>▲2</em></h3>
+                                <h4>438 points</h4>
+                                <h5>Top Teams:</h5>
+                                <p>8221 Cubix^3 (138)</p>
+                                <p>5916 BoBots (76)</p>
+                                <p>4240 4-H Techno Clovers (73)</p>
+                                <p>2843 Under the Son (40)</p>
+                                <p>7 TechBrick (28)</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-sm-6 col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/oregon.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                            <div class="caption"> 
+                                <h3>Oregon</h3>
+                                <h4>433 points</h4>
+                                <h5>Top Teams:</h5>
+                                <p>7013 Hot Wired (121)</p>
+                                <p>3531 Short Circuits (118)</p>
+                                <p>4855 Batteries in Black (49)</p>
+                                <p>2869 Flaming Cup Noodles (34)</p>
+                                <p>8045 Gromit's Grommets (28)</p>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="row"> 
+                    <div class="col-sm-6 col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newjersey.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>New Jersey</h3>
                                 <h4>389 points</h4>
@@ -1982,94 +2557,63 @@
                     </div>
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/oregon.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/california.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
-                                <h3>Oregon</h3>
-                                <h4>377 points</h4>
+                                <h3>California <em>▲1</em></h3>
+                                <h4>382 points</h4>
                                 <h5>Top Teams:</h5>
-                                <p>3531 Short Circuits (118)</p>
-                                <p>7013 Hot Wired (93)</p>
-                                <p>4855 Batteries in Black (49)</p>
-                                <p>2869 Flaming Cup Noodles (34)</p>
-                                <p>5939 Team AFOOFA (26)</p>
+                                <p>3509 PHOENXTRIX (44)</p>
+                                <p>4216 Rise of Hephaestus (40)</p>
+                                <p>8375 Vulcan Robotics (38)</p>
+                                <p>4278 De.Evolution (38)</p>
+                                <p>6137 RoBowties (36)</p>
                             </div> 
                         </div> 
                     </div>
-                </div>
-                
-                <div class="row"> 
+                    
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/maryland.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                            <div class="caption"> 
-                                <h3>Maryland</h3>
-                                <h4>357 points</h4>
-                                <h5>Top Teams:</h5>
-                                <p>8221 Cubix^3 (104)</p>
-                                <p>4240 4-H Techno Clovers (73)</p>
-                                <p>5916 BoBots (57)</p>
-                                <p>2843 Under the Son (40)</p>
-                                <p>7 TechBrick (Maryland) (28)</p>
-                            </div> 
-                        </div> 
-                    </div>
-                    <div class="col-sm-6 col-md-4"> 
-                        <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/ohio.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/ohio.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Ohio</h3>
-                                <h4>323 points</h4>
+                                <h4>350 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>4251 Cougar Robotics (158)</p>
                                 <p>4530 Infinite Resistance (79)</p>
-                                <p>6022 TBD - To Be Determined (58)</p>
+                                <p>6022 TBD - To Be Determined (76)</p>
                                 <p>6133 The "NUTS!" (14)</p>
                                 <p>6253 Avalanche (14)</p>
                             </div> 
                         </div> 
                     </div>
-                    <div class="col-sm-6 col-md-4"> 
-                        <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/california.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                            <div class="caption"> 
-                                <h3>California</h3>
-                                <h4>310 points</h4>
-                                <h5>Top Teams:</h5>
-                                <p>3509 PHOENXTRIX (44)</p>
-                                <p>8375 Vulcan Robotics (38)</p>
-                                <p>4278 De.Evolution (38)</p>
-                                <p>6137 RoBowties (36)</p>
-                                <p>8471 The Ducks (30)</p>
-                            </div> 
-                        </div> 
-                    </div>
                 </div>
                 
                 <div class="row"> 
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/texas.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/texas.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Texas</h3>
-                                <h4>243 points</h4>
+                                <h4>271 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>6299 QuadX (104)</p>
                                 <p>4290 High PHidelity (38)</p>
                                 <p>4546 SnakeByte (36)</p>
                                 <p>9048 Philobots (32)</p>
-                                <p>3708 Iron Eagles Optimus (17)</p>
+                                <p>8565 TechnicBots (20)</p>
                             </div> 
                         </div> 
                     </div>
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/washington.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/washington.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Washington</h3>
-                                <h4>194 points</h4>
+                                <h4>230 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>3717 CyberKnights (74)</p>
                                 <p>4590 CyberDaze (60)</p>
+                                <p>9915 Robo Thunder (36)</p>
                                 <p>6424 Oly Cow (34)</p>
                                 <p>3231 SyZyGy (26)</p>
                             </div> 
@@ -2077,15 +2621,16 @@
                     </div>
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/missouri.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/missouri.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Missouri</h3>
-                                <h4>166 points</h4>
+                                <h4>202 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>2888 Oddly Charged Particles (90)</p>
+                                <p>4211 The Bombers (44)</p>
                                 <p>3658 BOSON - Subatomic Particles (30)</p>
                                 <p>3620 Furious George (28)</p>
-                                <p>4211 The Bombers (18)</p>
+                                <p>3409 Astromechs (10)</p>
                             </div> 
                         </div> 
                     </div>
@@ -2094,36 +2639,65 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/mass.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/mass.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
-                                <h3>Massachusetts</h3>
-                                <h4>151 points</h4>
+                                <h3>Massachusetts <em>▲1</em></h3>
+                                <h4>199 points</h4>
                                 <h5>Top Teams:</h5>
-                                <p>4029 2 Bits and a Byte (69)</p>
+                                <p>4029 2 Bits and a Byte (83)</p>
+                                <p>8644 The Brainstormers (62)</p>
                                 <p>6055 GearTicks (34)</p>
-                                <p>8644 The Brainstormers (28)</p>
                                 <p>2875 MITibot (20)</p>
                             </div> 
                         </div> 
                     </div>
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newyork.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newyork.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>New York</h3>
-                                <h4>133 points</h4>
+                                <h4>168 points</h4>
                                 <h5>Top Teams:</h5>
+                                <p>4174 Atomic Theory (49)</p>
                                 <p>2864 Bounty Hunters (32)</p>
                                 <p>28 PolyGnomes (28)</p>
                                 <p>3951 Suffern Syborgs (28)</p>
                                 <p>5069 Robogamers (26)</p>
-                                <p>4174 Atomic Theory (19)</p>
                             </div> 
                         </div> 
                     </div>
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/conn.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/montana.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                            <div class="caption"> 
+                                <h3>Montana <em>▲3</em></h3>
+                                <h4>158 points </h4>
+                                <h5>Top Teams:</h5>
+                                <p>724 RedNek Robotics Wun (118)</p>
+                                <p>178 SD30 Robotics (40)</p>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/alaska.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                            <div class="caption"> 
+                                <h3>Alaska <em>▲3</em></h3>
+                                <h4>157 points</h4>
+                                <h5>Top Teams:</h5>
+                                <p>3705 Porhtal (52)</p>
+                                <p>3595 Schrodinger's Hat (43)</p>
+                                <p>3480 FrostByte (32)</p>
+                                <p>11168 The Quantum Mechanics (16)</p>
+                                <p>4539 Sourdoughs (14)</p>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-sm-6 col-md-4"> 
+                        <div class="thumbnail"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/conn.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
                                 <h3>Connecticut</h3>
                                 <h4>129 points</h4>
@@ -2133,43 +2707,16 @@
                             </div> 
                         </div> 
                     </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-sm-6 col-md-4"> 
-                        <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/montana.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                            <div class="caption"> 
-                                <h3>Montana</h3>
-                                <h4>118 points</h4>
-                                <h5>Top Teams:</h5>
-                                <p>724 RedNek Robotics Wun (78)</p>
-                                <p>178 SD30 Robotics (40)</p>
-                            </div> 
-                        </div> 
-                    </div>
                     <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/indiana.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/indiana.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Indiana</h3>
-                                        <h4>111 points</h4>
+                                        <h4>124 points</h4>
                                         <h5>Top Teams:</h5>
                                         <p>2803 Raptor Robotics (68)</p>
-                                        <p>3537 The Mecha-Hampsters (30)</p>
+                                        <p>3537 The Mecha-Hampsters (43)</p>
                                         <p>535 Tobor (13)</p>
-                                    </div> 
-                                </div> 
-                            </div>
-                    <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/idaho.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Idaho</h3>
-                                        <h4>90 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>5026 Tesla Coils (62)</p>
-                                        <p>5025 Tesla Filers (28)</p>
                                     </div> 
                                 </div> 
                             </div>
@@ -2184,38 +2731,42 @@
                         <div class="row">
                             <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/alaska.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/minnesota.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
-                                <h3>Alaska</h3>
-                                <h4>85 points</h4>
-                                <h5>Top Teams:</h5>
-                                <p>3705 Porhtal (52)</p>
-                                <p>3595 Schrodinger's Hat (19)</p>
-                                <p>4539 Sourdoughs (14)</p>
-                            </div> 
-                        </div> 
-                    </div>
-                    <div class="col-sm-6 col-md-4"> 
-                        <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/minnesota.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                            <div class="caption"> 
-                                <h3>Minnesota</h3>
-                                <h4>78 points</h4>
+                                <h3>Minnesota <em>▲3</em></h3>
+                                <h4>116 points</h4>
                                 <h5>Top Teams:</h5>
                                 <p>4140 Fish in the Boat (40)</p>
+                                <p>8686 Height Differential (38)</p>
                                 <p>3855 Tempered Steel (38)</p>
                             </div> 
                         </div> 
                     </div>
-                            <div class="col-sm-6 col-md-4"> 
+                    <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/illinois.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/penn.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Pennsylvania <em>▲6</em></h3>
+                                        <h4>115 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>4999 Imagine It (32)</p>
+                                        <p>230 Ampere (28)</p>
+                                        <p>7244 OUT of the BOX (22)</p>
+                                        <p>8393 BrainSTEM (18)</p>
+                                        <p>8645 Robotic Doges (15)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                    <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/illinois.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Illinois</h3>
-                                        <h4>53 points</h4>
+                                        <h4>99 points</h4>
                                         <h5>Top Teams:</h5>
                                         <p>3785 Beastie Bots (53)</p>
                                         <p>111 MiniStang (26)</p>
+                                        <p>7129 Robo Raiders (20)</p>
                                     </div> 
                                 </div> 
                             </div>
@@ -2224,31 +2775,73 @@
                         <div class="row">
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/mississippi.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Mississippi</h3>
-                                        <h4>68 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>8609 Blue Crew, Too (36)</p>
-                                        <p>3486 Techno Warriors Advanced (32)</p>
-                                    </div> 
-                                </div> 
-                            </div>
-                            <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/wisconsin.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/wisconsin.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Wisconsin</h3>
-                                        <h4>66 points</h4>
+                                        <h4>92 points</h4>
                                         <h5>Top Teams:</h5>
                                         <p>568 Steelers (36)</p>
                                         <p>217 Kinetic Polar Bears (30)</p>
+                                        <p>10294 The Edge (26)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                    <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/idaho.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Idaho</h3>
+                                        <h4>90 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>5026 Tesla Coils (62)</p>
+                                        <p>5025 Tesla Filers (28)</p>
                                     </div> 
                                 </div> 
                             </div>
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/georgia.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/mississippi.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Mississippi</h3>
+                                        <h4>88 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>8609 Blue Crew, Too (36)</p>
+                                        <p>3486 Techno Warriors Advanced (32)</p>
+                                        <p>8651 Wait For It... (20)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/romania.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Romania <em>▲10</em></h3>
+                                        <h4>86 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>5843 AutoVortex (64)</p>
+                                        <p>11058 AutoVortex Transilvania (12)</p>
+                                    </div> 
+                                </div> 
+                        </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/northc.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>North Carolina <em>▲3</em></h3>
+                                        <h4>76 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>4147 SuperCell (30)</p>
+                                        <p>5064 Aperture Science (26)</p>
+                                        <p>731 Wannabee Strange (20)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/georgia.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Georgia</h3>
                                         <h4>63 points</h4>
@@ -2264,7 +2857,19 @@
                         <div class="row">
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/china.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/colorado.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Colorado</h3>
+                                        <h4>62 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>6929 Data Force (38)</p>
+                                        <p>9899 Black Diamond Robotics (24)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/china.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>China</h3>
                                         <h4>62 points</h4>
@@ -2277,7 +2882,7 @@
                             </div>
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/michigan.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/michigan.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Michigan</h3>
                                         <h4>60 points</h4>
@@ -2287,36 +2892,12 @@
                                     </div> 
                                 </div> 
                             </div>
-                            <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/penn.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Pennsylvania</h3>
-                                        <h4>60 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>4999 Imagine It (32)</p>
-                                        <p>230 Ampere (28)</p>
-                                    </div> 
-                                </div> 
-                            </div>
                         </div>
                         
                         <div class="row">
-                            <div class="col-sm-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/northc.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>North Carolina</h3>
-                                        <h4>56 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>4147 SuperCell (30)</p>
-                                        <p>5064 Aperture Science (26)</p>
-                                    </div> 
-                                </div> 
-                            </div>
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/southcarolina.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/southcarolina.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>South Carolina</h3>
                                         <h4>52 points</h4>
@@ -2328,7 +2909,20 @@
                             </div>
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/canada.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/virginia.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Virginia <em>▲2</em></h3>
+                                        <h4>51 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>354 ILITE Robotics (20)</p>
+                                        <p>1885 ILITE Robotics (17)</p>
+                                        <p>5414 Tri Robotics (14)</p>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/canada.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Canada</h3>
                                         <h4>43 points</h4>
@@ -2339,10 +2933,10 @@
                             </div>
                         </div>
                         
-                        <div class="row">
-                            <div class="col-sm-6 col-md-4"> 
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/kentucky.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/kentucky.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Kentucky</h3>
                                         <h4>40 points</h4>
@@ -2351,9 +2945,21 @@
                                     </div> 
                                 </div> 
                             </div>
+                        <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/russia.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Russia <em>▲1</em></h3>
+                                        <h4>39 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>11044 PML30-Y (32)</p>
+                                        <p>12529 KTM (7)</p>
+                                    </div> 
+                                </div> 
+                        </div>
                             <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/arizona.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/arizona.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Arizona</h3>
                                         <h4>37 points</h4>
@@ -2363,46 +2969,24 @@
                                     </div> 
                                 </div> 
                             </div>
-                            <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/virginia.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Virginia</h3>
-                                        <h4>37 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>354 ILITE Robotics (20)</p>
-                                        <p>1885 ILITE Robotics (17)</p>
-                                    </div> 
-                                </div> 
-                            </div>
-                        </div>
+                    </div>
                         
                     <div class="row">
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/romania.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/iowa.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
-                                        <h3>Romania</h3>
-                                        <h4>34 points</h4>
+                                        <h3>Iowa <em>▲2</em></h3>
+                                        <h4>36 points</h4>
                                         <h5>Top Teams:</h5>
-                                        <p>5843 AutoVortex (34)</p>
+                                        <p>5466 Combustible Lemons (26)</p>
+                                        <p>7236 Recharged Green (10)</p>
                                     </div> 
                                 </div> 
-                        </div>
+                            </div>
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/russia.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Russia</h3>
-                                        <h4>32 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>11044 PML30-Y (32)</p>
-                                    </div> 
-                                </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newzealand.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/newzealand.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>New Zealand</h3>
                                         <h4>31 points</h4>
@@ -2411,12 +2995,9 @@
                                     </div> 
                                 </div> 
                             </div>
-                    </div>
-                        
-                    <div class="row">
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/ndaktoa.jpg" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/ndaktoa.jpg" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>North Dakota</h3>
                                         <h4>30 points</h4>
@@ -2425,20 +3006,12 @@
                                     </div> 
                                 </div> 
                         </div>
+                    </div>
+                        
+                    <div class="row">
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/iowa.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
-                                    <div class="caption"> 
-                                        <h3>Iowa</h3>
-                                        <h4>26 points</h4>
-                                        <h5>Top Teams:</h5>
-                                        <p>5466 Combustible Lemons (26)</p>
-                                    </div> 
-                                </div> 
-                        </div>
-                        <div class="col-sm-6 col-md-4"> 
-                                <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/alabama.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/alabama.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Alabama</h3>
                                         <h4>20 points</h4>
@@ -2447,12 +3020,9 @@
                                     </div> 
                                 </div> 
                             </div>
-                    </div>
-                        
-                    <div class="row">
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/rhodeisland.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/rhodeisland.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Rhode Island</h3>
                                         <h4>19 points</h4>
@@ -2463,7 +3033,20 @@
                             </div>
                         <div class="col-sm-6 col-md-4"> 
                                 <div class="thumbnail"> 
-                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/netherlands.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/oklahoma.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Oklahoma</h3>
+                                        <h4>16 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>11572 Mouse Spit (16)</p>
+                                    </div> 
+                                </div> 
+                        </div>
+                    </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/netherlands.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                                     <div class="caption"> 
                                         <h3>Netherlands</h3>
                                         <h4>13 points</h4>
@@ -2472,7 +3055,18 @@
                                     </div> 
                                 </div> 
                         </div>
-                    </div>
+                                <div class="col-sm-6 col-md-4"> 
+                                <div class="thumbnail"> 
+                                    <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/utah.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                    <div class="caption"> 
+                                        <h3>Utah</h3>
+                                        <h4>12 points</h4>
+                                        <h5>Top Teams:</h5>
+                                        <p>5667 Robominers (12)</p>
+                                    </div> 
+                                </div> 
+                        </div>
+                            </div>
                     </span>
                 </div>
             </div>
@@ -2679,6 +3273,110 @@
     </div>
 
     <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>World Championship 2017</h2>
+                            <h4>Velocity Vortex</h4>
+                            <h5>Manchester, NH</h5>
+                            <hr class="star-primary">
+                            <img style="" src="img/events/2017.png" class="img-responsive img-centered" alt="">
+<p>1st<br/>
+724 RedNek Robotics Wun (MT)<br/>
+4216 Rise of Hephaestus (CA)<br/>
+8651 Wait For It... (MS)<br/>
+<br/>
+2nd<br/>
+8686 Height Differential (MN)<br/>
+6929 Data Force (CO)<br/>
+5916 BoBots (MD)<br/>
+<br/>
+3rd<br/>
+9915 Robo Thunder (WA)<br/>
+4717 Mechromancers (FL)<br/>
+7203 KNO3 (FL)<br/>
+<br/>
+4th<br/>
+8221 Cubix^3 (MD)<br/>
+8644 The Brainstormers (MA)<br/>
+7182 Mechanical Paradox (MD)<br/>
+<br/>
+5th<br/>
+3480 FrostByte (AK)<br/>
+7477 Super 7 (FD)<br/>
+11168 The Quantum Mechanics (AK)<br/>
+<br/>
+6th<br/>
+4174 Atomic Theory (NY)<br/>
+5843 AutoVortex (Romania)<br/>
+8645 Robotic Doges (PA)<br/>
+<br/>
+7th<br/>
+7013 Hot Wired (OR)<br/>
+8045 Gromit's Grommets (OR)<br/>
+5220 RobotKnights (CA)<br/>
+<br/>
+8th<br/>
+10294 The Edge (WI)<br/>
+4211 The Bombers (MO)<br/>
+3537 The Mecha-Hampsters (IN)<br/>
+<br/>
+9th<br/>
+3595 Schrodinger's Hat (AK)<br/>
+9899 Black Diamond Robotics (CO)<br/>
+10298 Brain Stormz (CA)<br/>
+<br/>
+10th<br/>
+7129 Robo Raiders (IL)<br/>
+7244 OUT of the BOX (PA)<br/>
+9794 Wizards.exe (MD)<br/>
+<br/>
+11th<br/>
+8565 TechnicBots (TX)<br/>
+731 Wannabee Strange (NC)<br/>
+10345 Royal Blue (FD)<br/>
+<br/>
+12th<br/>
+8393 BrainSTEM (PA)<br/>
+6022 TBD - To Be Determined (OH)<br/>
+5040 Loveland Nuts & Bolts (OH)<br/>
+<br/>
+13th<br/>
+11572 Mouse Spit (OK)<br/>
+5064 Apeture Science (NC)<br/>
+6990 Static Void (TX)<br/>
+<br/>
+14th<br/>
+4029 2 Bits and a Byte (MA)<br/>
+5414 Tri Robotics (VA)<br/>
+12529 KTM (Russia)<br/>
+<br/>
+15th<br/>
+5667 Robominers (UT)<br/>
+11058 AutoVortex Transilvania (Romania)<br/>
+10092 Green.Griffins (CA)<br/>
+<br/>
+16th<br/>
+3409 Astromechs (MO)<br/>
+7236 Recharged Green (IA)<br/>
+11453 Uncertainty Principle (NY)<br/>
+</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -2696,8 +3394,8 @@
                             <h5>St.Louis, MO</h5>
                             <hr class="star-primary">
                             <img style="" src="img/events/2016.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-                                5916 BoBots (MD)<br/>
+<p>1st<br/>
+5916 BoBots (MD)<br/>
 8221 Cubix^3 (MD)<br/>
 6022 TBD - To Be Determined (OH)<br/>
 <br/>
@@ -2719,7 +3417,7 @@
 5th<br/>
 11044 PML30-Y (Russia)<br/>
 6299 QuadX (TX)<br/>
-3781 Pi-Rho Maniacs (Tx)<br/>
+3781 Pi-Rho Maniacs (TX)<br/>
 <br/>
 6th<br/>
 8471 The Ducks (CA)<br/>
@@ -3138,6 +3836,8 @@
     <script src="js/freelancer.min.js"></script>
     
     <script src="js/readmore.js"></script>
+    
+    <script src="js/search.js"></script>
 
 </body>
 
