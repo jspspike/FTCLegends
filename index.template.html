@@ -106,7 +106,7 @@
                     <div class="intro-text">
                         <span class="name">FTC Legends</span>
                         <hr class="star-light">
-                        <span class="skills">An archive of the {{ teams|length }} teams that have made it to the elimination rounds of the FIRST Tech Challenge World Championship since 2010.</span>
+                        <span class="skills">An archive of the {{ teams_list|length }} teams that have made it to the elimination rounds of the FIRST Tech Challenge World Championship since 2010.</span>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
             <form id="searchForm">
                 <input type="text" id="search" name="searchBar" placeholder="Search Teams.." onkeyup="showHiddenTeams()" onchange="showHiddenTeams()">
             </form>
-                {% for number, team in teams[:10] %}
+                {% for number, team in teams_list[:10] %}
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -172,7 +172,7 @@
             </a><br/>
 
             <span class="more_text", id="hiddenSpan", name="hiddenSpan">
-                {% for number, team in teams[10:] %}
+                {% for number, team in teams_list[10:] %}
                 <div class="media"> 
                     <div class="media-left"> 
                         <a href="#"> 
@@ -308,132 +308,36 @@
                             <th>Points</th>
                         </tr>
                         <tr>
-                            <td>1st Place Alliance (Captain/1st Pick)</td>
+                            <td>Winning Alliance (Captain/1st Pick)</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Finalist Alliance (Captain/1st Pick)</td>
                             <td>40</td>
                         </tr>
                         <tr>
-                            <td>2nd Place Alliance (Captain/1st Pick)</td>
-                            <td>38</td>
-                        </tr>
-                        <tr>
-                            <td>3rd Place Alliance (Captain/1st Pick)</td>
-                            <td>36</td>
-                        </tr>
-                        <tr>
-                            <td>4th Place Alliance (Captain/1st Pick)</td>
-                            <td>34</td>
-                        </tr>
-                        <tr>
-                            <td>5th Place Alliance (Captain/1st Pick)</td>
-                            <td>32</td>
-                        </tr>
-                        <tr>
-                            <td>6th Place Alliance (Captain/1st Pick)</td>
+                            <td>Semi-Finalist Alliance (Captain/1st Pick)</td>
                             <td>30</td>
                         </tr>
                         <tr>
-                            <td>7th Place Alliance (Captain/1st Pick)</td>
-                            <td>28</td>
+                            <td>Winning Alliance (2nd Pick)</td>
+                            <td>25</td>
                         </tr>
                         <tr>
-                            <td>8th Place Alliance (Captain/1st Pick)</td>
-                            <td>26</td>
-                        </tr>
-                         <tr>
-                            <td>9th Place Alliance (Captain/1st Pick)</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>10th Place Alliance (Captain/1st Pick)</td>
-                            <td>22</td>
-                        </tr>
-                        <tr>
-                            <td>11th Place Alliance (Captain/1st Pick)</td>
+                            <td>Quarter-Finalist Alliance (Captain/1st Pick)</td>
                             <td>20</td>
                         </tr>
                         <tr>
-                            <td>1st Place Alliance (2nd Pick)</td>
+                            <td>Finalist Alliance (2nd Pick)</td>
                             <td>20</td>
                         </tr>
                         <tr>
-                            <td>2nd Place Alliance (2nd Pick)</td>
-                            <td>19</td>
-                        </tr>
-                        <tr>
-                            <td>12th Place Alliance (Captain/1st Pick)</td>
-                            <td>18</td>
-                        </tr>
-                        <tr>
-                            <td>3rd Place Alliance (2nd Pick)</td>
-                            <td>18</td>
-                        </tr>
-                        <tr>
-                            <td>4th Place Alliance (2nd Pick)</td>
-                            <td>17</td>
-                        </tr>
-                        <tr>
-                            <td>13th Place Alliance (Captain/1st Pick)</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>5th Place Alliance (2nd Pick)</td>
-                            <td>16</td>
-                        </tr>
-                        <tr>
-                            <td>6th Place Alliance (2nd Pick)</td>
+                            <td>Semi-Finalist Alliance (2nd Pick)</td>
                             <td>15</td>
                         </tr>
                         <tr>
-                            <td>14th Place Alliance (Captain/1st Pick)</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td>7th Place Alliance (2nd Pick)</td>
-                            <td>14</td>
-                        </tr>
-                        <tr>
-                            <td>8th Place Alliance (2nd Pick)</td>
-                            <td>13</td>
-                        </tr>
-                        <tr>
-                            <td>15th Place Alliance (Captain/1st Pick)</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>9th Place Alliance (2nd Pick)</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>10th Place Alliance (2nd Pick)</td>
-                            <td>11</td>
-                        </tr>
-                        <tr>
-                            <td>16th Place Alliance (Captain/1st Pick)</td>
+                            <td>Quarter-Finalist Alliance (2nd Pick)</td>
                             <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>11th Place Alliance (2nd Pick)</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>12th Place Alliance (2nd Pick)</td>
-                            <td>9</td>
-                        </tr>
-                        <tr>
-                            <td>13th Place Alliance (2nd Pick)</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>14th Place Alliance (2nd Pick)</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>15th Place Alliance (2nd Pick)</td>
-                            <td>6</td>
-                        </tr>
-                        <tr>
-                            <td>16th Place Alliance (2nd Pick)</td>
-                            <td>5</td>
                         </tr>
                     </table>
                 </div>
@@ -483,7 +387,8 @@
         </a>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+    {% for name, event in events.items() %}
+    <div class="portfolio-modal modal fade" id="{{ name }}modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -495,91 +400,20 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Championships 2018</h2>
-                            <h4>Relic Recovery</h4>
-                            <h5>Detroit, Michigan/Houston, Texas</h5>
+                            <h2>{{ event["name"] }}</h2>
+                            <h4>{{ event["game"] }}</h4>
+                            <h5>{{ event["location"] }}</h5>
                             <hr class="star-primary">
-                            <img style="" src="img/events/2018.png" class="img-responsive img-centered" alt="">
-<p>1st (Detroit)<br/>
-8644 The Brainstormers (MA)<br/>
-8393 BrainSTEM (PA)<br/>
-4029 2 Bits and a Byte (MA)<br/>
-<br/>
-1st (Houston)<br/>
-7750 M&M's (OR)<br/>
-724 RedNek Robotics Wun (MT)<br/>
-12611 TechNova (WA)<br/>
-<br/>
-2nd (Detroit)<br/>
-11115 Gluten Free(NH)<br/>
-7182 Mechanical Paradox Cubed (MD)<br/>
-9971 LANbros (NJ)<br/>
-<br/>
-2nd (Houston)<br/>
-7105 SWIFT Robotics (NC)<br/>
-7161 Hyrda (TX)<br/>
-7209 Tech Hogs Robotics (AR)<br/>
-<br/>
-3rd (Detroit)<br/>
-8645 Robotics Doges (PA)<br/>
-7261 Omega Robotics (IA)<br/>
-5029 PowerStackers (OH)<br/>
-<br/>
-3rd (Houston)<br/>
-12599 Overcharged (OR)<br/>
-9899 Black Diamond Robotics (CO)<br/>
-11039 Innov8rz (CA)<br/>
-<br/>
-4th (Detroit)<br/>
-5040 Nuts & Bolts (OH)<br/>
-8680 Kraken-Pinion (WI)<br/>
-11316 Weapons of Mass Construction (IA)<br/>
-<br/>
-4th (Houston)<br/>
-12973 Reicher Robotics (TX)<br/>
-6929 Data Force (CO)<br/>
-5220 RobotKnights (CA)<br/>
-<br/>
-5th (Detroit)<br/>
-14276 Technogods (Romania)<br/>
-9867 Evolution Robotics (MA)<br/>
-14278 Xeo (Romania)<br/>
-<br/>
-5th (Houston)<br/>
-2856 Tesseract (WA)<br/>
-14219 Volt (China)<br/>
-11503 HyperFang (TX)<br/>
-<br/>
-6th (Detroit)<br/>
-14317 So7en-X (China)<br/>
-6931 BrainSTEM (PA)<br/>
-7117 The Blockheads (VA)<br/>
-<br/>
-6th (Houston)<br/>
-14210 Pianists (China)<br/>
-10337 Dark Matter (LA)<br/>
-11089 Bytes of Kitkats (OR)<br/>
-<br/>
-7th (Detroit)<br/>
-6133 The "NUTS!" (OH)<br/>
-10091 N.Y.A.N. Robotics (IL)<br/>
-7351 Dyanmic Signals (IL)<br/>
-<br/>
-7th (Houston)<br/>
-4717 Mechromancers (FL)<br/>
-7398 Blue Crew (MS)<br/>
-731 Wannabee Strange (NC)<br/>
-<br/>
-8th (Detroit)<br/>
-4106 Supposable Thumbs (WI)<br/>
-11100 We are Robo (MA)<br/>
-10030 7 Sigma (OH)<br/>
-<br/>
-8th (Houston)<br/>
-4216 Rise of Hephaestus (CA)<br/>
-12808 Revamped Robotics (OR)<br/>
-9441 Syndicate (CA)<br/>
-</p>
+                            <img style="" src="img/events/{{ name }}.png" class="img-responsive img-centered" alt="">
+                            <p>
+                            {% for placement in event["placement"] %}
+                            {{ placement_names[placement["place"]] }}</br>
+                            {{ placement["0"] }} {{ teams[placement["0"]|string]["name"] }} ({{ teams[placement["0"]|string]["location"] }})</br>
+                            {{ placement["1"] }} {{ teams[placement["1"]|string]["name"] }} ({{ teams[placement["1"]|string]["location"] }})</br>
+                            {{ placement["2"] }} {{ teams[placement["2"]|string]["name"] }} ({{ teams[placement["2"]|string]["location"] }})</br>
+                            </br>
+                            {% endfor %}
+                            </p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -587,552 +421,7 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2017</h2>
-                            <h4>Velocity Vortex</h4>
-                            <h5>Manchester, NH</h5>
-                            <hr class="star-primary">
-                            <img style="" src="img/events/2017.png" class="img-responsive img-centered" alt="">
-<p>1st<br/>
-724 RedNek Robotics Wun (MT)<br/>
-4216 Rise of Hephaestus (CA)<br/>
-8651 Wait For It... (MS)<br/>
-<br/>
-2nd<br/>
-8686 Height Differential (MN)<br/>
-6929 Data Force (CO)<br/>
-5916 BoBots (MD)<br/>
-<br/>
-3rd<br/>
-9915 Robo Thunder (WA)<br/>
-4717 Mechromancers (FL)<br/>
-7203 KNO3 (FL)<br/>
-<br/>
-4th<br/>
-8221 Cubix^3 (MD)<br/>
-8644 The Brainstormers (MA)<br/>
-7182 Mechanical Paradox Cubed (MD)<br/>
-<br/>
-5th<br/>
-3480 FrostByte (AK)<br/>
-7477 Super 7 (FD)<br/>
-11168 The Quantum Mechanics (AK)<br/>
-<br/>
-6th<br/>
-4174 Atomic Theory (NY)<br/>
-5843 AutoVortex (Romania)<br/>
-8645 Robotic Doges (PA)<br/>
-<br/>
-7th<br/>
-7013 Hot Wired (OR)<br/>
-8045 Gromit's Grommets (OR)<br/>
-5220 RobotKnights (CA)<br/>
-<br/>
-8th<br/>
-10294 The Edge (WI)<br/>
-4211 The Bombers (MO)<br/>
-3537 The Mecha-Hampsters (IN)<br/>
-<br/>
-9th<br/>
-3595 Schrodinger's Hat (AK)<br/>
-9899 Black Diamond Robotics (CO)<br/>
-10298 Brain Stormz (CA)<br/>
-<br/>
-10th<br/>
-7129 Robo Raiders (IL)<br/>
-7244 OUT of the BOX (PA)<br/>
-9794 Wizards.exe (MD)<br/>
-<br/>
-11th<br/>
-8565 TechnicBots (TX)<br/>
-731 Wannabee Strange (NC)<br/>
-10345 Royal Blue (FD)<br/>
-<br/>
-12th<br/>
-8393 BrainSTEM (PA)<br/>
-6022 TBD - To Be Determined (OH)<br/>
-5040 Nuts & Bolts (OH)<br/>
-<br/>
-13th<br/>
-11572 Mouse Spit (OK)<br/>
-5064 Apeture Science (NC)<br/>
-6990 Static Void (TX)<br/>
-<br/>
-14th<br/>
-4029 2 Bits and a Byte (MA)<br/>
-5414 Tri Robotics (VA)<br/>
-12529 KTM (Russia)<br/>
-<br/>
-15th<br/>
-5667 Robominers (UT)<br/>
-11058 AutoVortex Transilvania (Romania)<br/>
-10092 Green.Griffins (CA)<br/>
-<br/>
-16th<br/>
-3409 Astromechs (MO)<br/>
-7236 Recharged Green (IA)<br/>
-11453 Uncertainty Principle (NY)<br/>
-</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2016</h2>
-                            <h4>Res-Q</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img style="" src="img/events/2016.jpg" class="img-responsive img-centered" alt="">
-<p>1st<br/>
-5916 BoBots (MD)<br/>
-8221 Cubix^3 (MD)<br/>
-6022 TBD - To Be Determined (OH)<br/>
-<br/>
-2nd<br/>
-8375 Vulcan Robotics (CA)<br/>
-7013 Hot Wired (OR)<br/>
-3595 Schrodinger's Hat (AK)<br/>
-<br/>
-3rd<br/>
-6137 RoBowties (CA)<br/>
-4997 Masquerade (FL)<br/>
-5110 Wingus & Dingus (New Zealand)<br/>
-<br/>
-4th<br/>
-6055 GearTicks (MA)<br/>
-5843 AutoVortex (Romania)<br/>
-8995 Mogollon Rim Jaegers (AZ)<br/>
-<br/>
-5th<br/>
-11044 PML30-Y (Russia)<br/>
-6299 QuadX (TX)<br/>
-3781 Pi-Rho Maniacs (TX)<br/>
-<br/>
-6th<br/>
-8471 The Ducks (CA)<br/>
-4855 Batteries in Black (OR)<br/>
-9804 Bomb Squad (CA)<br/>
-<br/>
-7th<br/>
-4029 2 Bits and a Byte (MA)<br/>
-8644 The Brainstormers (MA)<br/>
-4143 Occam's Razor (OR)<br/>
-<br/>
-8th<br/>
-5064 Apeture Science (NC)<br/>
-6081 i^2 robotics (CT)<br/>
-535 Tobor (IN)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2015</h2>
-                            <h4>Cascade Effect</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2015.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-6433 Neutrinos (FL)<br/>
-724 RedNek Robotics Wun (MT)<br/>
-2844 Valley X (AZ)<br/>
-<br/>
-2nd<br/>
-6022 TBD - To Be Determined (OH)<br/>
-4290 High PHidelity (TX)<br/>
-4174 Atomic Theory (NY)<br/>
-<br/>
-3rd<br/>
-8609 Blue Crew, Too (MS)<br/>
-6299 QuadX (TX)<br/>
-3415 Lancers (NJ)<br/>
-<br/>
-4th<br/>
-5026 Tesla Coils (ID)<br/>
-4997 Masquerade (FL)<br/>
-5916 BoBots (MD)<br/>
-<br/>
-5th<br/>
-9048 Philobots (TX)<br/>
-8221 Cubix^3 (MD)<br/>
-6081 i^2 robotics (CT)<br/>
-<br/>
-6th<br/>
-5206 The Knights of Ni (CA)<br/>
-8231 Skyhawks (ND)<br/>
-7013 Hot Wired (OR)<br/>
-<br/>
-7th<br/>
-28 PolyGnomes (NY)<br/>
-4530 Infinite Resistance (OH)<br/>
-6133 The "NUTS!" (OH)<br/>
-<br/>
-8th<br/>
-4251 Cougar Robotics (OH)<br/>
-5257 Eagles Robotics Xperience (FL)<br/>
-5110 Wingus & Dingus (New Zealand)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2014</h2>
-                            <h4>Block Party</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2014.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-7013 Hot Wired (OR)<br/>
-5257 Eagles Robotics Xperience (FL)<br/>
-4240 4-H Techno Clovers (MD)<br/>
-<br/>
-2nd<br/>
-4251 Cougar Robotics (OH)<br/>
-724 RedNek Robotics Wun (MT)<br/>
-4318 Green Machine (MD)<br/>
-<br/>
-3rd<br/>
-4997 Masquerade (FL)<br/>
-6299 QuadX (TX)<br/>
-4211 The Bombers (MO)<br/>
-<br/>
-4th<br/>
-6433 Neutrinos (FL)<br/>
-6424 Oly Cow (WA)<br/>
-3708 Iron Eagles Optimus (TX)<br/>
-<br/>
-5th<br/>
-8221 Cubix^3 (MD)<br/>
-4999 Imagine It (PA)<br/>
-5555 Option 16 (CA)<br/>
-<br/>
-6th<br/>
-2753 Team Overdrive (NJ)<br/>
-4347 Nanogurus (NJ)<br/>
-4029 2 Bits and a Byte (MA)<br/>
-<br/>
-7th<br/>
-5026 Tesla Coils (ID)<br/>
-4507 Robo Chargers (MI)<br/>
-6253 Avalanche (OH)<br/>
-<br/>
-8th<br/>
-5939 Team AFOOFA (OR)<br/>
-5069 Robogamers (NY)<br/>
-577 Wreckers Robotics (CT)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2013</h2>
-                            <h4>Ring it up</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2013.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-4251 Cougar Robotics (OH)<br/>
-4140 Fish in the Boat (MN)<br/>
-5096 Monkey Madness (AL)<br/>
-<br/>
-2nd<br/>
-3717 CyberKnights (WA)<br/>
-3846 Maelstrom (FL)<br/>
-4855 Batteries in Black (OR)<br/>
-<br/>
-3rd<br/>
-4530 Infinite Resistance (OH)<br/>
-4546 SnakeByte (TX)<br/>
-3531 Short Circuits (OR)<br/>
-<br/>
-4th<br/>
-4220 Landroids (NJ)<br/>
-4102 CHS Cougars (NJ)<br/>
-3485 Da Peeps (MI)<br/>
-<br/>
-5th<br/>
-2753 Team Overdrive (NJ)<br/>
-3486 Techno Warriors Advanced (MS)<br/>
-3509 PHOENXTRIX (CA)<br/>
-<br/>
-6th<br/>
-3537 The Mecha-Hampsters (IN)<br/>
-4147 SuperCell (NC)<br/>
-4076 RoBUGS (GA)<br/>
-<br/>
-7th<br/>
-3539 Say Watt? (NJ)<br/>
-5025 Tesla Filers (ID)<br/>
-6922 GMT-E (China)<br/>
-<br/>
-8th<br/>
-6002 Basilisks (CA)<br/>
-5466 Combustible Lemons (IA)<br/>
-5070 N.U.T.S (FL)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2012</h2>
-                            <h4>Bowled Over</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2012.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-4444 Whitefield Academy (KY)<br/>
-4997 Masquerade (FL)<br/>
-354 ILITE Robotics (VA)<br/>
-<br/>
-2nd<br/>
-4220 Landroids (NJ)<br/>
-4251 Cougar Robotics (OH)<br/>
-4240 4-H Techno Clovers (MD)<br/>
-<br/>
-3rd<br/>
-3717 CyberKnights (WA)<br/>
-3531 Short Circuits (OR)<br/>
-5838 Inspiration Ginko (China)<br/>
-<br/>
-4th<br/>
-3705 Porhtal (AK)<br/>
-4590 CyberDaze (WA)<br/>
-3785 Beastie Bots (IL)<br/>
-<br/>
-5th<br/>
-2803 Raptor Robotics (IN)<br/>
-4311 Watt the Hex (NJ)<br/>
-2845 Team Duct Tape (FL)<br/>
-<br/>
-6th<br/>
-3539 Say Watt? (NJ)<br/>
-5837 Dreamway (China)<br/>
-4530 Infinite Resistance (OH)<br/>
-<br/>
-7th<br/>
-230 Ampere (PA)<br/>
-3951 Suffern Syborgs (NY)<br/>
-4539 Sourdoughs (AK)<br/>
-<br/>
-8th<br/>
-4029 2 Bits and a Byte (MA)<br/>
-2888 Oddly Charged Particles (MO)<br/>
-3761 Lord of the Screws (Netherlands)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2011</h2>
-                            <h4>Get Over It</h4>
-                            <h5>St.Louis, MO</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2011.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-178 SD30 Robotics (MT)<br/>
-577 Wreckers Robotics (CT)<br/>
-2875 MITibot (MA)<br/>
-<br/>
-2nd<br/>
-4278 De.Evolution (CA)<br/>
-4102 CHS Cougars (NJ)<br/>
-3053 Doves of Justice (CA)<br/>
-<br/>
-3rd<br/>
-3785 Beastie Bots (IL)<br/>
-2803 Raptor Robotics (IN)<br/>
-3705 Porhtal (AK)<br/>
-<br/>
-4th<br/>
-4240 4-H Techno Clovers (MD)<br/>
-2869 Flaming Cup Noodles (OR)<br/>
-2818 The Original G-FORCE (MD)<br/>
-<br/>
-5th<br/>
-2864 Bounty Hunters (NY)<br/>
-3539 Say Watt? (NJ)<br/>
-4251 Cougar Robotics (OH)<br/>
-<br/>
-6th<br/>
-3658 BOSON - Subatomic Particles (MO)<br/>
-2888 Oddly Charged Particles (MO)<br/>
-1369 Minotaur (FL)<br/>
-<br/>
-7th<br/>
-3531 Short Circuits (OR)<br/>
-3509 PHOENXTRIX (CA)<br/>
-3237 Titan Robotics Team 2 (OR)<br/>
-<br/>
-8th<br/>
-4590 CyberDaze (WA)<br/>
-3231 SyZyGy (WA)<br/>
-245 Roberts Creek Xtreme Robotic Minds (Canada)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>World Championship 2010</h2>
-                            <h4>Hot Shot</h4>
-                            <h5>Atlanta, GA</h5>
-                            <hr class="star-primary">
-                            <img src="img/events/2010.jpg" class="img-responsive img-centered" alt="">
-                            <p>1st<br/>
-2868 Smoke and Mirrors (FL)<br/>
-2843 Under the Son (MD)<br/>
-3864 GForce (SC)<br/>
-<br/>
-2nd<br/>
-3855 Tempered Steel (MN)<br/>
-154 Renegade (RI)<br/>
-2859 Team Tiki (MD)<br/>
-<br/>
-3rd<br/>
-568 Steelers (WI)<br/>
-3531 Short Circuits (OR)<br/>
-452 PHI (CA)<br/>
-<br/>
-4th<br/>
-577 Wreckers Robotics (CT)<br/>
-2888 Oddly Charged Particles (MO)<br/>
-1885 ILITE Robotics (VA)<br/>
-<br/>
-5th<br/>
-753 Team E.T. (SC)<br/>
-710 Mariners (GA)<br/>
-1848 SOUP (GA)<br/>
-<br/>
-6th<br/>
-245 Roberts Creek Xtreme Robotic Minds (Canada)<br/>
-217 Kinetic Polar Bears (??)<br/>
-3485 Da Peeps (MI)<br/>
-<br/>
-7th<br/>
-3620 Furious George (MO)<br/>
-7 TechBrick (MD)<br/>
-3361 S.A.M. (??)<br/>
-<br/>
-8th<br/>
-111 MiniStang (IL)<br/>
-3577 Titan Robotics Team 3: The Skullz (OR)<br/>
-248 Fatal Error (NJ)</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

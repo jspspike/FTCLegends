@@ -13,6 +13,12 @@ for team in teams.values():
     team["placements"] = []
 
 scores = {"w": 50, "f": 40, "sf": 30, "qf": 20}
+placement_names = {
+    "w": "Winning Alliance",
+    "f": "Finalist Alliance",
+    "sf": "Semi-Finalist Alliance",
+    "qf": "Quarter-Finalist Alliance",
+}
 last_event = "2017detroit"
 
 for event_name, event in data["events"].items():
@@ -29,14 +35,8 @@ for event_name, event in data["events"].items():
             team = teams[str(number)]
             team["score"] += points
 
-            if placement == "w":
-                placement = "Winning Alliance"
-            elif placement == "f":
-                placement = "Finalist Alliance"
-            elif placement == "sf":
-                placement = "Semi-Finalist Alliance"
-            elif placement == "qf":
-                placement = "Quarter-Finalist Alliance"
+            if placement in placement_names:
+                placement = placement_names[placement]
 
             if rank == "0":
                 rank = "Captain"
@@ -127,8 +127,13 @@ for number, team in teams.items():
             "teams": [(number, team)],
         }
 
-locations = dict(sorted(locations.items(), key=lambda item: item[1]["score"], reverse=True))
-locations_list = [tuple(list(locations.items())[i:i+3]) for i in range(0, len(list(locations.items())), 3)]
+locations = dict(
+    sorted(locations.items(), key=lambda item: item[1]["score"], reverse=True)
+)
+locations_list = [
+    tuple(list(locations.items())[i : i + 3])
+    for i in range(0, len(list(locations.items())), 3)
+]
 
 locations_old = {}
 
@@ -144,7 +149,9 @@ for team in teams_old.values():
         locations_old[team_location] = {"score": team["score"]}
 
 
-locations_old = dict(sorted(locations_old.items(), key=lambda item: item[1]["score"], reverse=True))
+locations_old = dict(
+    sorted(locations_old.items(), key=lambda item: item[1]["score"], reverse=True)
+)
 
 for location in locations_old.keys():
     curr_rank = list(locations).index(location)
@@ -162,9 +169,14 @@ env = Environment(
     loader=FileSystemLoader(searchpath="."),
 )
 
-teams = list(teams.items())
+teams_list = list(teams.items())
 
 template = env.get_template("index.template.html")
-template.stream(events=data["events"], teams=teams, locations=locations, locations_list=locations_list).dump(
-    "public/index.html"
-)
+template.stream(
+    events=data["events"],
+    teams=teams,
+    teams_list=teams_list,
+    locations=locations,
+    locations_list=locations_list,
+    placement_names=placement_names,
+).dump("public/index.html")
