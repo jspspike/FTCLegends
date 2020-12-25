@@ -19,7 +19,7 @@ placement_names = {
     "sf": "Semi-Finalist Alliance",
     "qf": "Quarter-Finalist Alliance",
 }
-last_event = "2017detroit"
+last_event = "2017stlouis"
 
 for event_name, event in data["events"].items():
     for alliance in event["placement"]:

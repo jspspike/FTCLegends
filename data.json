@@ -112,11 +112,11 @@
                 }
             ]
         },
-        "2017detroit": {
-            "name": "Detroit Championship 2017",
-            "short": "2017 (Detroit)",
+        "2017stlouis": {
+            "name": "St. Louis Championship 2017",
+            "short": "2017 (St. Louis)",
             "game": "Velocity Vortex",
-            "location": "Detroit, Michigan",
+            "location": "St. Louis, Missouri",
             "placement": [
                 {
                     "place": "w",
