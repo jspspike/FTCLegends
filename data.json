@@ -1,0 +1,1432 @@
+{
+    "events": {
+        "2018detroit": {
+            "name": "Detroit Championship 2018",
+            "short": "2018 (Detroit)",
+            "game": "Relic Recovery",
+            "location": "Detroit, Michigan",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 8644,
+                    "1": 8393,
+                    "2": 4029
+                },
+                {
+                    "place": "f",
+                    "0": 11115,
+                    "1": 7182,
+                    "2": 9971
+                },
+                {
+                    "place": "sf",
+                    "0": 8645,
+                    "1": 7261,
+                    "2": 5029
+                },
+                {
+                    "place": "sf",
+                    "0": 5040,
+                    "1": 8680,
+                    "2": 11316
+                },
+                {
+                    "place": "qf",
+                    "0": 14276,
+                    "1": 9867,
+                    "2": 14278
+                },
+                {
+                    "place": "qf",
+                    "0": 14317,
+                    "1": 6931,
+                    "2": 7117
+                },
+                {
+                    "place": "qf",
+                    "0": 6133,
+                    "1": 10091,
+                    "2": 7351
+                },
+                {
+                    "place": "qf",
+                    "0": 4106,
+                    "1": 11100,
+                    "2": 10030
+                }
+            ]
+        },
+        "2018houston": {
+            "name": "Houston Championship 2018",
+            "short": "2018 (Houston)",
+            "game": "Relic Recovery",
+            "location": "Houston, Texas",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 7750,
+                    "1": 724,
+                    "2": 12611
+                },
+                {
+                    "place": "f",
+                    "0": 7105,
+                    "1": 7161,
+                    "2": 7209
+                },
+                {
+                    "place": "sf",
+                    "0": 12599,
+                    "1": 9899,
+                    "2": 11039
+                },
+                {
+                    "place": "sf",
+                    "0": 12973,
+                    "1": 6929,
+                    "2": 5220
+                },
+                {
+                    "place": "qf",
+                    "0": 2856,
+                    "1": 14219,
+                    "2": 11503
+                },
+                {
+                    "place": "qf",
+                    "0": 14210,
+                    "1": 10337,
+                    "2": 11089
+                },
+                {
+                    "place": "qf",
+                    "0": 4717,
+                    "1": 7398,
+                    "2": 731
+                },
+                {
+                    "place": "qf",
+                    "0": 4216,
+                    "1": 12808,
+                    "2": 9441
+                }
+            ]
+        },
+        "2017detroit": {
+            "name": "Detroit Championship 2017",
+            "short": "2017 (Detroit)",
+            "game": "Velocity Vortex",
+            "location": "Detroit, Michigan",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 8686,
+                    "1": 6929,
+                    "2": 5916
+                },
+                {
+                    "place": "f",
+                    "0": 8221,
+                    "1": 8644,
+                    "2": 7182
+                },
+                {
+                    "place": "sf",
+                    "0": 4174,
+                    "1": 5843,
+                    "2": 8645
+                },
+                {
+                    "place": "sf",
+                    "0": 10294,
+                    "1": 4211,
+                    "2": 3537
+                },
+                {
+                    "place": "qf",
+                    "0": 7129,
+                    "1": 7244,
+                    "2": 9794
+                },
+                {
+                    "place": "qf",
+                    "0": 8393,
+                    "1": 6022,
+                    "2": 5040
+                },
+                {
+                    "place": "qf",
+                    "0": 4029,
+                    "1": 5414,
+                    "2": 12529
+                },
+                {
+                    "place": "qf",
+                    "0": 3409,
+                    "1": 7236,
+                    "2": 11453
+                }
+            ]
+        },
+        "2017houston": {
+            "name": "Houston Championship 2017",
+            "short": "2017 (Houston)",
+            "game": "Velocity Vortex",
+            "location": "Houston, Texas",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 724,
+                    "1": 4216,
+                    "2": 8651
+                },
+                {
+                    "place": "f",
+                    "0": 9915,
+                    "1": 4717,
+                    "2": 7203
+                },
+                {
+                    "place": "sf",
+                    "0": 3480,
+                    "1": 7477,
+                    "2": 11168
+                },
+                {
+                    "place": "sf",
+                    "0": 7013,
+                    "1": 8045,
+                    "2": 5220
+                },
+                {
+                    "place": "qf",
+                    "0": 3595,
+                    "1": 9899,
+                    "2": 10298
+                },
+                {
+                    "place": "qf",
+                    "0": 8565,
+                    "1": 731,
+                    "2": 10345
+                },
+                {
+                    "place": "qf",
+                    "0": 11572,
+                    "1": 5064,
+                    "2": 6990
+                },
+                {
+                    "place": "qf",
+                    "0": 5667,
+                    "1": 11058,
+                    "2": 10092
+                }
+            ]
+        },
+        "2016": {
+            "name": "World Championship 2016",
+            "game": "Res-Q",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 5916,
+                    "1": 8221,
+                    "2": 6022
+                },
+                {
+                    "place": "f",
+                    "0": 8375,
+                    "1": 7013,
+                    "2": 3595
+                },
+                {
+                    "place": "sf",
+                    "0": 6137,
+                    "1": 4997,
+                    "2": 5110
+                },
+                {
+                    "place": "sf",
+                    "0": 6055,
+                    "1": 5843,
+                    "2": 8995
+                },
+                {
+                    "place": "qf",
+                    "0": 11044,
+                    "1": 6299,
+                    "2": 3781
+                },
+                {
+                    "place": "qf",
+                    "0": 8471,
+                    "1": 4855,
+                    "2": 9804
+                },
+                {
+                    "place": "qf",
+                    "0": 4029,
+                    "1": 8644,
+                    "2": 4143
+                },
+                {
+                    "place": "qf",
+                    "0": 5064,
+                    "1": 6081,
+                    "2": 535
+                }
+            ]
+        },
+        "2015": {
+            "name": "World Championship 2015",
+            "game": "Cascade Effect",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 6433,
+                    "1": 724,
+                    "2": 2844
+                },
+                {
+                    "place": "f",
+                    "0": 6022,
+                    "1": 4290,
+                    "2": 4174
+                },
+                {
+                    "place": "sf",
+                    "0": 8609,
+                    "1": 6299,
+                    "2": 3415
+                },
+                {
+                    "place": "sf",
+                    "0": 5026,
+                    "1": 4997,
+                    "2": 5916
+                },
+                {
+                    "place": "qf",
+                    "0": 9048,
+                    "1": 8221,
+                    "2": 6081
+                },
+                {
+                    "place": "qf",
+                    "0": 5206,
+                    "1": 8231,
+                    "2": 7013
+                },
+                {
+                    "place": "qf",
+                    "0": 28,
+                    "1": 4530,
+                    "2": 6133
+                },
+                {
+                    "place": "qf",
+                    "0": 4251,
+                    "1": 5257,
+                    "2": 5110
+                }
+            ]
+        },
+        "2014": {
+            "name": "World Championship 2014",
+            "game": "Block Party",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 7013,
+                    "1": 5257,
+                    "2": 4240
+                },
+                {
+                    "place": "f",
+                    "0": 4251,
+                    "1": 724,
+                    "2": 4318
+                },
+                {
+                    "place": "sf",
+                    "0": 4997,
+                    "1": 6299,
+                    "2": 4211
+                },
+                {
+                    "place": "sf",
+                    "0": 6433,
+                    "1": 6424,
+                    "2": 3708
+                },
+                {
+                    "place": "qf",
+                    "0": 8221,
+                    "1": 4999,
+                    "2": 5555
+                },
+                {
+                    "place": "qf",
+                    "0": 2753,
+                    "1": 4347,
+                    "2": 4029
+                },
+                {
+                    "place": "qf",
+                    "0": 5026,
+                    "1": 4507,
+                    "2": 6253
+                },
+                {
+                    "place": "qf",
+                    "0": 5939,
+                    "1": 5069,
+                    "2": 577
+                }
+            ]
+        },
+        "2013": {
+            "name": "World Championship 2013",
+            "game": "Ring It Up",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 4251,
+                    "1": 4140,
+                    "2": 5096
+                },
+                {
+                    "place": "f",
+                    "0": 3717,
+                    "1": 3846,
+                    "2": 4855
+                },
+                {
+                    "place": "sf",
+                    "0": 4530,
+                    "1": 4546,
+                    "2": 3531
+                },
+                {
+                    "place": "sf",
+                    "0": 4220,
+                    "1": 4102,
+                    "2": 3485
+                },
+                {
+                    "place": "qf",
+                    "0": 2753,
+                    "1": 3486,
+                    "2": 3509
+                },
+                {
+                    "place": "qf",
+                    "0": 3537,
+                    "1": 4147,
+                    "2": 4076
+                },
+                {
+                    "place": "qf",
+                    "0": 3539,
+                    "1": 5025,
+                    "2": 6922
+                },
+                {
+                    "place": "qf",
+                    "0": 6002,
+                    "1": 5466,
+                    "2": 5070
+                }
+            ]
+        },
+        "2012": {
+            "name": "World Championship 2012",
+            "game": "Bowled Over",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 4444,
+                    "1": 4997,
+                    "2": 354
+                },
+                {
+                    "place": "f",
+                    "0": 4220,
+                    "1": 4251,
+                    "2": 4240
+                },
+                {
+                    "place": "sf",
+                    "0": 3717,
+                    "1": 3531,
+                    "2": 5838
+                },
+                {
+                    "place": "sf",
+                    "0": 3705,
+                    "1": 4590,
+                    "2": 3785
+                },
+                {
+                    "place": "qf",
+                    "0": 2803,
+                    "1": 4311,
+                    "2": 2845
+                },
+                {
+                    "place": "qf",
+                    "0": 3539,
+                    "1": 5837,
+                    "2": 4530
+                },
+                {
+                    "place": "qf",
+                    "0": 230,
+                    "1": 3951,
+                    "2": 4539
+                },
+                {
+                    "place": "qf",
+                    "0": 4029,
+                    "1": 2888,
+                    "2": 3761
+                }
+            ]
+        },
+        "2011": {
+            "name": "World Championship 2011",
+            "game": "Get Over It",
+            "location": "St. Louis, Missouri",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 178,
+                    "1": 577,
+                    "2": 2875
+                },
+                {
+                    "place": "f",
+                    "0": 4278,
+                    "1": 4102,
+                    "2": 3053
+                },
+                {
+                    "place": "sf",
+                    "0": 3785,
+                    "1": 2803,
+                    "2": 3705
+                },
+                {
+                    "place": "sf",
+                    "0": 4240,
+                    "1": 2869,
+                    "2": 2818
+                },
+                {
+                    "place": "qf",
+                    "0": 2864,
+                    "1": 3539,
+                    "2": 4251
+                },
+                {
+                    "place": "qf",
+                    "0": 3658,
+                    "1": 2888,
+                    "2": 1369
+                },
+                {
+                    "place": "qf",
+                    "0": 3531,
+                    "1": 3509,
+                    "2": 3237
+                },
+                {
+                    "place": "qf",
+                    "0": 4590,
+                    "1": 3231,
+                    "2": 245
+                }
+            ]
+        },
+        "2010": {
+            "name": "World Championship 2010",
+            "game": "Hot Shot",
+            "location": "Alanta, Georgia",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 2868,
+                    "1": 2843,
+                    "2": 3864
+                },
+                {
+                    "place": "f",
+                    "0": 3855,
+                    "1": 154,
+                    "2": 2859
+                },
+                {
+                    "place": "sf",
+                    "0": 568,
+                    "1": 3531,
+                    "2": 452
+                },
+                {
+                    "place": "sf",
+                    "0": 577,
+                    "1": 2888,
+                    "2": 1885
+                },
+                {
+                    "place": "qf",
+                    "0": 753,
+                    "1": 710,
+                    "2": 1848
+                },
+                {
+                    "place": "qf",
+                    "0": 245,
+                    "1": 217,
+                    "2": 3485
+                },
+                {
+                    "place": "qf",
+                    "0": 3620,
+                    "1": 7,
+                    "2": 3361
+                },
+                {
+                    "place": "qf",
+                    "0": 111,
+                    "1": 3577,
+                    "2": 248
+                }
+            ]
+        }
+    },
+    "teams": {
+        "7": {
+            "location": "MD",
+            "name": "TechBrick"
+        },
+        "28": {
+            "location": "NY",
+            "name": "PolyGnomes"
+        },
+        "111": {
+            "location": "IL",
+            "name": "MiniStang"
+        },
+        "154": {
+            "location": "RI",
+            "name": "Renegade"
+        },
+        "178": {
+            "location": "MT",
+            "name": "SD30 Robotics"
+        },
+        "217": {
+            "location": "??",
+            "name": "Kinetic Polar Bears"
+        },
+        "230": {
+            "location": "PA",
+            "name": "Ampere"
+        },
+        "245": {
+            "location": "Canada",
+            "name": "Roberts Creek Xtreme Robotic Minds"
+        },
+        "248": {
+            "location": "NJ",
+            "name": "Fatal Error"
+        },
+        "354": {
+            "location": "VA",
+            "name": "ILITE Robotics"
+        },
+        "452": {
+            "location": "CA",
+            "name": "PHI"
+        },
+        "535": {
+            "location": "IN",
+            "name": "Tobor"
+        },
+        "568": {
+            "location": "WI",
+            "name": "Steelers"
+        },
+        "577": {
+            "location": "CT",
+            "name": "Wreckers Robotics"
+        },
+        "710": {
+            "location": "GA",
+            "name": "Mariners"
+        },
+        "724": {
+            "location": "MT",
+            "name": "RedNek Robotics Wun"
+        },
+        "731": {
+            "location": "NC",
+            "name": "Wannabee Strange"
+        },
+        "753": {
+            "location": "SC",
+            "name": "Team E.T."
+        },
+        "1369": {
+            "location": "FL",
+            "name": "Minotaur"
+        },
+        "1848": {
+            "location": "GA",
+            "name": "SOUP"
+        },
+        "1885": {
+            "location": "VA",
+            "name": "ILITE Robotics"
+        },
+        "2753": {
+            "location": "NJ",
+            "name": "Team Overdrive"
+        },
+        "2803": {
+            "location": "IN",
+            "name": "Raptor Robotics"
+        },
+        "2818": {
+            "location": "MD",
+            "name": "The Original G-FORCE"
+        },
+        "2843": {
+            "location": "MD",
+            "name": "Under the Son"
+        },
+        "2844": {
+            "location": "AZ",
+            "name": "Valley X"
+        },
+        "2845": {
+            "location": "FL",
+            "name": "Team Duct Tape"
+        },
+        "2856": {
+            "location": "WA",
+            "name": "Tesseract"
+        },
+        "2859": {
+            "location": "MD",
+            "name": "Team Tiki"
+        },
+        "2864": {
+            "location": "NY",
+            "name": "Bounty Hunters"
+        },
+        "2868": {
+            "location": "FL",
+            "name": "Smoke and Mirrors"
+        },
+        "2869": {
+            "location": "OR",
+            "name": "Flaming Cup Noodles"
+        },
+        "2875": {
+            "location": "MA",
+            "name": "MITibot"
+        },
+        "2888": {
+            "location": "MO",
+            "name": "Oddly Charged Particles"
+        },
+        "3053": {
+            "location": "CA",
+            "name": "Doves of Justice"
+        },
+        "3231": {
+            "location": "WA",
+            "name": "SyZyGy"
+        },
+        "3237": {
+            "location": "OR",
+            "name": "Titan Robotics Team 2"
+        },
+        "3361": {
+            "location": "??",
+            "name": "S.A.M."
+        },
+        "3409": {
+            "location": "MO",
+            "name": "Astromechs"
+        },
+        "3415": {
+            "location": "NJ",
+            "name": "Lancers"
+        },
+        "3480": {
+            "location": "AK",
+            "name": "FrostByte"
+        },
+        "3485": {
+            "location": "MI",
+            "name": "Da Peeps"
+        },
+        "3486": {
+            "location": "MS",
+            "name": "Techno Warriors Advanced"
+        },
+        "3509": {
+            "location": "CA",
+            "name": "PHOENXTRIX"
+        },
+        "3531": {
+            "location": "OR",
+            "name": "Short Circuits"
+        },
+        "3537": {
+            "location": "IN",
+            "name": "The Mecha-Hampsters"
+        },
+        "3539": {
+            "location": "NJ",
+            "name": "Say Watt?"
+        },
+        "3577": {
+            "location": "OR",
+            "name": "Titan Robotics Team 3: The Skullz"
+        },
+        "3595": {
+            "location": "AK",
+            "name": "Schrodinger's Hat"
+        },
+        "3620": {
+            "location": "MO",
+            "name": "Furious George"
+        },
+        "3658": {
+            "location": "MO",
+            "name": "BOSON - Subatomic Particles"
+        },
+        "3705": {
+            "location": "AK",
+            "name": "Porhtal"
+        },
+        "3708": {
+            "location": "TX",
+            "name": "Iron Eagles Optimus"
+        },
+        "3717": {
+            "location": "WA",
+            "name": "CyberKnights"
+        },
+        "3761": {
+            "location": "Netherlands",
+            "name": "Lord of the Screws"
+        },
+        "3781": {
+            "location": "TX",
+            "name": "Pi-Rho Maniacs"
+        },
+        "3785": {
+            "location": "IL",
+            "name": "Beastie Bots"
+        },
+        "3846": {
+            "location": "FL",
+            "name": "Maelstrom"
+        },
+        "3855": {
+            "location": "MN",
+            "name": "Tempered Steel"
+        },
+        "3864": {
+            "location": "SC",
+            "name": "GForce"
+        },
+        "3951": {
+            "location": "NY",
+            "name": "Suffern Syborgs"
+        },
+        "4029": {
+            "location": "MA",
+            "name": "2 Bits and a Byte"
+        },
+        "4076": {
+            "location": "GA",
+            "name": "RoBUGS"
+        },
+        "4102": {
+            "location": "NJ",
+            "name": "CHS Cougars"
+        },
+        "4106": {
+            "location": "WI",
+            "name": "Supposable Thumbs"
+        },
+        "4140": {
+            "location": "MN",
+            "name": "Fish in the Boat"
+        },
+        "4143": {
+            "location": "OR",
+            "name": "Occam's Razor"
+        },
+        "4147": {
+            "location": "NC",
+            "name": "SuperCell"
+        },
+        "4174": {
+            "location": "NY",
+            "name": "Atomic Theory"
+        },
+        "4211": {
+            "location": "MO",
+            "name": "The Bombers"
+        },
+        "4216": {
+            "location": "CA",
+            "name": "Rise of Hephaestus"
+        },
+        "4220": {
+            "location": "NJ",
+            "name": "Landroids"
+        },
+        "4240": {
+            "location": "MD",
+            "name": "4-H Techno Clovers"
+        },
+        "4251": {
+            "location": "OH",
+            "name": "Cougar Robotics"
+        },
+        "4278": {
+            "location": "CA",
+            "name": "De.Evolution"
+        },
+        "4290": {
+            "location": "TX",
+            "name": "High PHidelity"
+        },
+        "4311": {
+            "location": "NJ",
+            "name": "Watt the Hex"
+        },
+        "4318": {
+            "location": "MD",
+            "name": "Green Machine"
+        },
+        "4347": {
+            "location": "NJ",
+            "name": "Nanogurus"
+        },
+        "4444": {
+            "location": "KY",
+            "name": "Whitefield Academy"
+        },
+        "4507": {
+            "location": "MI",
+            "name": "Robo Chargers"
+        },
+        "4530": {
+            "location": "OH",
+            "name": "Infinite Resistance"
+        },
+        "4539": {
+            "location": "AK",
+            "name": "Sourdoughs"
+        },
+        "4546": {
+            "location": "TX",
+            "name": "SnakeByte"
+        },
+        "4590": {
+            "location": "WA",
+            "name": "CyberDaze"
+        },
+        "4717": {
+            "location": "FL",
+            "name": "Mechromancers"
+        },
+        "4855": {
+            "location": "OR",
+            "name": "Batteries in Black"
+        },
+        "4997": {
+            "location": "FL",
+            "name": "Masquerade"
+        },
+        "4999": {
+            "location": "PA",
+            "name": "Imagine It"
+        },
+        "5025": {
+            "location": "ID",
+            "name": "Tesla Filers"
+        },
+        "5026": {
+            "location": "ID",
+            "name": "Tesla Coils"
+        },
+        "5029": {
+            "location": "OH",
+            "name": "PowerStackers"
+        },
+        "5040": {
+            "location": "OH",
+            "name": "Nuts & Bolts"
+        },
+        "5064": {
+            "location": "NC",
+            "name": "Apeture Science"
+        },
+        "5069": {
+            "location": "NY",
+            "name": "Robogamers"
+        },
+        "5070": {
+            "location": "FL",
+            "name": "N.U.T.S"
+        },
+        "5096": {
+            "location": "AL",
+            "name": "Monkey Madness"
+        },
+        "5110": {
+            "location": "New Zealand",
+            "name": "Wingus & Dingus"
+        },
+        "5206": {
+            "location": "CA",
+            "name": "The Knights of Ni"
+        },
+        "5220": {
+            "location": "CA",
+            "name": "RobotKnights"
+        },
+        "5257": {
+            "location": "FL",
+            "name": "Eagles Robotics Xperience"
+        },
+        "5414": {
+            "location": "VA",
+            "name": "Tri Robotics"
+        },
+        "5466": {
+            "location": "IA",
+            "name": "Combustible Lemons"
+        },
+        "5555": {
+            "location": "CA",
+            "name": "Option 16"
+        },
+        "5667": {
+            "location": "UT",
+            "name": "Robominers"
+        },
+        "5837": {
+            "location": "China",
+            "name": "Dreamway"
+        },
+        "5838": {
+            "location": "China",
+            "name": "Inspiration Ginko"
+        },
+        "5843": {
+            "location": "Romania",
+            "name": "AutoVortex"
+        },
+        "5916": {
+            "location": "MD",
+            "name": "BoBots"
+        },
+        "5939": {
+            "location": "OR",
+            "name": "Team AFOOFA"
+        },
+        "6002": {
+            "location": "CA",
+            "name": "Basilisks"
+        },
+        "6022": {
+            "location": "OH",
+            "name": "TBD - To Be Determined"
+        },
+        "6055": {
+            "location": "MA",
+            "name": "GearTicks"
+        },
+        "6081": {
+            "location": "CT",
+            "name": "i^2 robotics"
+        },
+        "6133": {
+            "location": "OH",
+            "name": "The \"NUTS!\""
+        },
+        "6137": {
+            "location": "CA",
+            "name": "RoBowties"
+        },
+        "6253": {
+            "location": "OH",
+            "name": "Avalanche"
+        },
+        "6299": {
+            "location": "TX",
+            "name": "QuadX"
+        },
+        "6424": {
+            "location": "WA",
+            "name": "Oly Cow"
+        },
+        "6433": {
+            "location": "FL",
+            "name": "Neutrinos"
+        },
+        "6922": {
+            "location": "China",
+            "name": "GMT-E"
+        },
+        "6929": {
+            "location": "CO",
+            "name": "Data Force"
+        },
+        "6931": {
+            "location": "PA",
+            "name": "BrainSTEM"
+        },
+        "6990": {
+            "location": "TX",
+            "name": "Static Void"
+        },
+        "7013": {
+            "location": "OR",
+            "name": "Hot Wired"
+        },
+        "7105": {
+            "location": "NC",
+            "name": "SWIFT Robotics"
+        },
+        "7117": {
+            "location": "VA",
+            "name": "The Blockheads"
+        },
+        "7129": {
+            "location": "IL",
+            "name": "Robo Raiders"
+        },
+        "7161": {
+            "location": "TX",
+            "name": "Hyrda"
+        },
+        "7182": {
+            "location": "MD",
+            "name": "Mechanical Paradox Cubed"
+        },
+        "7203": {
+            "location": "FL",
+            "name": "KNO3"
+        },
+        "7209": {
+            "location": "AR",
+            "name": "Tech Hogs Robotics"
+        },
+        "7236": {
+            "location": "IA",
+            "name": "Recharged Green"
+        },
+        "7244": {
+            "location": "PA",
+            "name": "OUT of the BOX"
+        },
+        "7261": {
+            "location": "IA",
+            "name": "Omega Robotics"
+        },
+        "7351": {
+            "location": "IL",
+            "name": "Dyanmic Signals"
+        },
+        "7398": {
+            "location": "MS",
+            "name": "Blue Crew"
+        },
+        "7477": {
+            "location": "FD",
+            "name": "Super 7"
+        },
+        "7750": {
+            "location": "OR",
+            "name": "M&M's"
+        },
+        "8045": {
+            "location": "OR",
+            "name": "Gromit's Grommets"
+        },
+        "8221": {
+            "location": "MD",
+            "name": "Cubix^3"
+        },
+        "8231": {
+            "location": "ND",
+            "name": "Skyhawks"
+        },
+        "8375": {
+            "location": "CA",
+            "name": "Vulcan Robotics"
+        },
+        "8393": {
+            "location": "PA",
+            "name": "BrainSTEM"
+        },
+        "8471": {
+            "location": "CA",
+            "name": "The Ducks"
+        },
+        "8565": {
+            "location": "TX",
+            "name": "TechnicBots"
+        },
+        "8609": {
+            "location": "MS",
+            "name": "Blue Crew, Too"
+        },
+        "8644": {
+            "location": "MA",
+            "name": "The Brainstormers"
+        },
+        "8645": {
+            "location": "PA",
+            "name": "Robotic Doges"
+        },
+        "8651": {
+            "location": "MS",
+            "name": "Wait For It..."
+        },
+        "8680": {
+            "location": "WI",
+            "name": "Kraken-Pinion"
+        },
+        "8686": {
+            "location": "MN",
+            "name": "Height Differential"
+        },
+        "8995": {
+            "location": "AZ",
+            "name": "Mogollon Rim Jaegers"
+        },
+        "9048": {
+            "location": "TX",
+            "name": "Philobots"
+        },
+        "9441": {
+            "location": "CA",
+            "name": "Syndicate"
+        },
+        "9794": {
+            "location": "MD",
+            "name": "Wizards.exe"
+        },
+        "9804": {
+            "location": "CA",
+            "name": "Bomb Squad"
+        },
+        "9867": {
+            "location": "MA",
+            "name": "Evolution Robotics"
+        },
+        "9899": {
+            "location": "CO",
+            "name": "Black Diamond Robotics"
+        },
+        "9915": {
+            "location": "WA",
+            "name": "Robo Thunder"
+        },
+        "9971": {
+            "location": "NJ",
+            "name": "LANbros"
+        },
+        "10030": {
+            "location": "OH",
+            "name": "7 Sigma"
+        },
+        "10091": {
+            "location": "IL",
+            "name": "N.Y.A.N. Robotics"
+        },
+        "10092": {
+            "location": "CA",
+            "name": "Green.Griffins"
+        },
+        "10294": {
+            "location": "WI",
+            "name": "The Edge"
+        },
+        "10298": {
+            "location": "CA",
+            "name": "Brain Stormz"
+        },
+        "10337": {
+            "location": "LA",
+            "name": "Dark Matter"
+        },
+        "10345": {
+            "location": "FD",
+            "name": "Royal Blue"
+        },
+        "11039": {
+            "location": "CA",
+            "name": "Innov8rz"
+        },
+        "11044": {
+            "location": "Russia",
+            "name": "PML30-Y"
+        },
+        "11058": {
+            "location": "Romania",
+            "name": "AutoVortex Transilvania"
+        },
+        "11089": {
+            "location": "OR",
+            "name": "Bytes of Kitkats"
+        },
+        "11100": {
+            "location": "MA",
+            "name": "We are Robo"
+        },
+        "11115": {
+            "location": "NH",
+            "name": "Gluten Free"
+        },
+        "11168": {
+            "location": "AK",
+            "name": "The Quantum Mechanics"
+        },
+        "11316": {
+            "location": "IA",
+            "name": "Weapons of Mass Construction"
+        },
+        "11453": {
+            "location": "NY",
+            "name": "Uncertainty Principle"
+        },
+        "11503": {
+            "location": "TX",
+            "name": "HyperFang"
+        },
+        "11572": {
+            "location": "OK",
+            "name": "Mouse Spit"
+        },
+        "12529": {
+            "location": "Russia",
+            "name": "KTM"
+        },
+        "12599": {
+            "location": "OR",
+            "name": "Overcharged"
+        },
+        "12611": {
+            "location": "WA",
+            "name": "TechNova"
+        },
+        "12808": {
+            "location": "OR",
+            "name": "Revamped Robotics"
+        },
+        "12973": {
+            "location": "TX",
+            "name": "Reicher Robotics"
+        },
+        "14210": {
+            "location": "China",
+            "name": "Pianists"
+        },
+        "14219": {
+            "location": "China",
+            "name": "Volt"
+        },
+        "14276": {
+            "location": "Romania",
+            "name": "Technogods"
+        },
+        "14278": {
+            "location": "Romania",
+            "name": "Xeo"
+        },
+        "14317": {
+            "location": "China",
+            "name": "So7en-X"
+        }
+    },
+    "locations": {
+        "AL": "Alabama",
+        "AK": "Alaska",
+        "AS": "American Samoa",
+        "AZ": "Arizona",
+        "AR": "Arkansas",
+        "CA": "California",
+        "CO": "Colorado",
+        "CT": "Connecticut",
+        "DE": "Delaware",
+        "DC": "District Of Columbia",
+        "FM": "Federated States Of Micronesia",
+        "FL": "Florida",
+        "GA": "Georgia",
+        "GU": "Guam",
+        "HI": "Hawaii",
+        "ID": "Idaho",
+        "IL": "Illinois",
+        "IN": "Indiana",
+        "IA": "Iowa",
+        "KS": "Kansas",
+        "KY": "Kentucky",
+        "LA": "Louisiana",
+        "ME": "Maine",
+        "MH": "Marshall Islands",
+        "MD": "Maryland",
+        "MA": "Massachusetts",
+        "MI": "Michigan",
+        "MN": "Minnesota",
+        "MS": "Mississippi",
+        "MO": "Missouri",
+        "MT": "Montana",
+        "NE": "Nebraska",
+        "NV": "Nevada",
+        "NH": "New Hampshire",
+        "NJ": "New Jersey",
+        "NM": "New Mexico",
+        "NY": "New York",
+        "NC": "North Carolina",
+        "ND": "North Dakota",
+        "MP": "Northern Mariana Islands",
+        "OH": "Ohio",
+        "OK": "Oklahoma",
+        "OR": "Oregon",
+        "PW": "Palau",
+        "PA": "Pennsylvania",
+        "PR": "Puerto Rico",
+        "RI": "Rhode Island",
+        "SC": "South Carolina",
+        "SD": "South Dakota",
+        "TN": "Tennessee",
+        "TX": "Texas",
+        "UT": "Utah",
+        "VT": "Vermont",
+        "VI": "Virgin Islands",
+        "VA": "Virginia",
+        "WA": "Washington",
+        "WV": "West Virginia",
+        "WI": "Wisconsin",
+        "WY": "Wyoming"
+    }
+}
