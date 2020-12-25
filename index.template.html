@@ -234,16 +234,17 @@
                 </div>
             </div>
             <div class="bs-example" data-example-id="thumbnails-with-custom-content"> 
+                {% for location in locations_list[:3] %}
                 <div class="row">
-                    {% for location in locations.values() %}
+                    {% for i in range(3) %}
                     <div class="col-sm-6 col-md-4"> 
                         <div class="thumbnail"> 
-                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/{{ location["name"]|lower|replace(' ', '') }}.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                            <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/{{ location[i][1]["name"]|lower|replace(' ', '') }}.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
                             <div class="caption"> 
-                                <h3>{{ location["name"] }} <em>▲2</em></h3>
-                                <h4>{{ location["score"] }} points</h4>
+                                <h3>{{ location[i][1]["name"] }} {% if "diff" in location[i][1] %} <em>▲{{ location[i][1]["diff"] }}</em>{% endif %}</h3>
+                                <h4>{{ location[i][1]["score"] }} points</h4>
                                 <h5>Top Teams:</h5>
-                                {% for number, team in location["teams"][:5] %}
+                                {% for number, team in location[i][1]["teams"][:5] %}
                                 <p>{{ number }} {{ team["name"] }} ({{ team["score"] }})</p>
                                 {% endfor %}
                             </div> 
@@ -251,6 +252,34 @@
                     </div>
                     {% endfor %}
                 </div>
+                {% endfor %}
+                 <div class="item">
+                    <a href="#" class="read_more">
+                        <h1 style="color:white">See all locations</h1>
+                    </a><br/>
+
+                    <span class="more_text">
+                        {% for location in locations_list[3:] %}
+                            <div class="row">
+                                {% for i in range(location|length) %}
+                                <div class="col-sm-6 col-md-4"> 
+                                    <div class="thumbnail"> 
+                                        <img alt="100%x200" data-src="holder.js/100%x200" src="img/locations/{{ location[i][1]["name"]|lower|replace(' ', '') }}.png" data-holder-rendered="true" style="height: 100%; width: 100%; display: block;"> 
+                                        <div class="caption"> 
+                                            <h3>{{ location[i][1]["name"] }} {% if "diff" in location[i][1] %} <em>▲{{ location[i][1]["diff"] }}</em>{% endif %}</h3>
+                                            <h4>{{ location[i][1]["score"] }} points</h4>
+                                            <h5>Top Teams:</h5>
+                                            {% for number, team in location[i][1]["teams"][:5] %}
+                                            <p>{{ number }} {{ team["name"] }} ({{ team["score"] }})</p>
+                                            {% endfor %}
+                                        </div> 
+                                    </div> 
+                                </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </span>
+                 </div>
             </div>
                         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- ftclegend -->

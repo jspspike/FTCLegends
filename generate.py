@@ -49,14 +49,16 @@ for event_name, event in data["events"].items():
                 event_name_short = event["short"]
             else:
                 event_name_short = event_name
-            
+
             team["placements"].append(
                 {"event": event_name_short, "placement": placement, "rank": rank}
             )
 
-            files = [f for f in os.listdir('./public/img/teams') if f.startswith(str(number))]
+            files = [
+                f for f in os.listdir("./public/img/teams") if f.startswith(str(number))
+            ]
             if len(files) == 0:
-                img = 'unknown.png'
+                img = "unknown.png"
             else:
                 img = files[0]
 
@@ -89,8 +91,10 @@ for event_name, event in data["events"].items():
             team["score"] += points
 
 
-teams = dict(sorted(teams.items(), key = lambda item: item[1]["score"], reverse=True))
-teams_old = dict(sorted(teams_old.items(), key = lambda item: item[1]["score"], reverse=True))
+teams = dict(sorted(teams.items(), key=lambda item: item[1]["score"], reverse=True))
+teams_old = dict(
+    sorted(teams_old.items(), key=lambda item: item[1]["score"], reverse=True)
+)
 
 for number in teams_old.keys():
     curr_rank = list(teams).index(number)
@@ -117,12 +121,41 @@ for number, team in teams.items():
 
         locations[team_location]["teams"].append((number, team))
     else:
-        locations[team_location] = {"name": location_name, "score": team["score"], "teams": [(number, team)]}
+        locations[team_location] = {
+            "name": location_name,
+            "score": team["score"],
+            "teams": [(number, team)],
+        }
 
-locations = dict(sorted(locations.items(), key = lambda item: item[1]["score"], reverse=True))
+locations = dict(sorted(locations.items(), key=lambda item: item[1]["score"], reverse=True))
+locations_list = [tuple(list(locations.items())[i:i+3]) for i in range(0, len(list(locations.items())), 3)]
+
+locations_old = {}
+
+for team in teams_old.values():
+    team_location = team["location"]
+
+    if team_location == "??":
+        continue
+
+    if team_location in locations_old:
+        locations_old[team_location]["score"] += team["score"]
+    else:
+        locations_old[team_location] = {"score": team["score"]}
+
+
+locations_old = dict(sorted(locations_old.items(), key=lambda item: item[1]["score"], reverse=True))
+
+for location in locations_old.keys():
+    curr_rank = list(locations).index(location)
+    old_rank = list(locations_old).index(location)
+
+    if curr_rank < old_rank:
+        locations[location]["diff"] = old_rank - curr_rank
+
 
 print(json.dumps(teams, indent=4, sort_keys=True))
-#print(json.dumps(teams_old, indent=4, sort_keys=True))
+# print(json.dumps(teams_old, indent=4, sort_keys=True))
 print(json.dumps(locations, indent=4, sort_keys=True))
 
 env = Environment(
@@ -132,6 +165,6 @@ env = Environment(
 teams = list(teams.items())
 
 template = env.get_template("index.template.html")
-template.stream(events=data["events"], teams=teams, locations=locations).dump(
+template.stream(events=data["events"], teams=teams, locations=locations, locations_list=locations_list).dump(
     "public/index.html"
 )
