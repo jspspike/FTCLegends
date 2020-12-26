@@ -58,7 +58,7 @@ for event_name, event in data["events"].items():
             )
 
             files = [
-                f for f in os.listdir("./public/img/teams") if f.startswith(str(number))
+                f for f in os.listdir("./public/img/teams") if f.startswith(str(number) + ".")
             ]
             if len(files) == 0:
                 img = "unknown.png"
