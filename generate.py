@@ -1,3 +1,5 @@
+# Generates site by parsing `data.json` and using `index.template.html`
+
 import copy
 import os
 import itertools
@@ -21,6 +23,7 @@ placement_names = {
 }
 last_event = "2017stlouis"
 
+# Iterate through each event and tally up points and placement lists for each team
 for event_name, event in data["events"].items():
     for alliance in event["placement"]:
         for rank, number in alliance.items():
@@ -70,6 +73,7 @@ for team in teams_old.values():
     team["score"] = 0
     team["placements"] = []
 
+# Iterate through events starting from `last_event` to tally up previous points
 started = False
 for event_name, event in data["events"].items():
     if event_name == last_event:
@@ -96,6 +100,7 @@ teams_old = dict(
     sorted(teams_old.items(), key=lambda item: item[1]["score"], reverse=True)
 )
 
+# Use sorted `teams` and `teams_old` to find changes in team ranking from `last_event`
 for number in teams_old.keys():
     curr_rank = list(teams).index(number)
     old_rank = list(teams_old).index(number)
@@ -105,6 +110,7 @@ for number in teams_old.keys():
 
 locations = {}
 
+# Iterate through `teams` to tally up points for differetion locations
 for number, team in teams.items():
     team_location = team["location"]
 
@@ -137,6 +143,7 @@ locations_list = [
 
 locations_old = {}
 
+# Iterate through `teams_old` to tally up points for differetion locations starting from `last_event`
 for team in teams_old.values():
     team_location = team["location"]
 
@@ -153,6 +160,8 @@ locations_old = dict(
     sorted(locations_old.items(), key=lambda item: item[1]["score"], reverse=True)
 )
 
+
+# Use sorted `locations` and `locations_old` to find changes in location ranking from `last_event`
 for location in locations_old.keys():
     curr_rank = list(locations).index(location)
     old_rank = list(locations_old).index(location)
@@ -161,15 +170,17 @@ for location in locations_old.keys():
         locations[location]["diff"] = old_rank - curr_rank
 
 
-print(json.dumps(teams, indent=4, sort_keys=True))
+# print(json.dumps(teams, indent=4, sort_keys=True))
 # print(json.dumps(teams_old, indent=4, sort_keys=True))
-print(json.dumps(locations, indent=4, sort_keys=True))
+# print(json.dumps(locations, indent=4, sort_keys=True))
 
 env = Environment(
     loader=FileSystemLoader(searchpath="."),
 )
 
-teams_list = list(teams.items())
+teams_list = list(
+    teams.items()
+)  # This and locations_list is kinda bad but I was too lazy to figure how to slice an iterator
 
 template = env.get_template("index.template.html")
 template.stream(
