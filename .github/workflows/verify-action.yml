@@ -9,7 +9,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Check formatting
-              uses: lgeiger/black-action@
+              uses: lgeiger/black-action@v1.0.1
               with:
                   args: 'generate.py --check'
             - name: Install python
