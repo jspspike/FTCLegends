@@ -12,7 +12,7 @@ for team in teams.values():
     team["score"] = 0
     team["placements"] = []
 
-scores = {"w": 50, "f": 40, "sf": 30, "qf": 20}
+scores = {"w": 60, "f": 50, "sf": 40, "qf": 30}
 placement_names = {
     "w": "Winning Alliance",
     "f": "Finalist Alliance",

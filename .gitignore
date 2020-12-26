@@ -1,1 +1,6 @@
+#Generated page
 public/index.html
+
+#Wrangler
+dist/
+workers-site/

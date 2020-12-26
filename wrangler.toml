@@ -1,0 +1,8 @@
+name = "ftclegends"
+type = "webpack"
+account_id = "45bd495d0b1a573a324657fe0074e41b"
+route = "*ftclegends.info/*"
+zone_id = "cdb6856895f5616afbb71f75a16d0ac0"
+
+[site]
+bucket = "./public"
