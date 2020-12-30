@@ -1,5 +1,117 @@
 {
     "events": {
+        "2019detroit": {
+            "name": "Detroit Championship 2019",
+            "short": "2019 (Detroit)",
+            "game": "Rover Ruckus",
+            "location": "Detroit, Michigan",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 9971,
+                    "1": 11115,
+                    "2": 10091
+                },
+                {
+                    "place": "f",
+                    "0": 8393,
+                    "1": 7182,
+                    "2": 7236
+                },
+                {
+                    "place": "sf",
+                    "0": 8680,
+                    "1": 12231,
+                    "2": 11316
+                },
+                {
+                    "place": "sf",
+                    "0": 8699,
+                    "1": 8417,
+                    "2": 9872
+                },
+                {
+                    "place": "qf",
+                    "0": 8479,
+                    "1": 9794,
+                    "2": 9956
+                },
+                {
+                    "place": "qf",
+                    "0": 2818,
+                    "1": 4634,
+                    "2": 5356
+                },
+                {
+                    "place": "qf",
+                    "0": 10435,
+                    "1": 14270,
+                    "2": 5485
+                },
+                {
+                    "place": "qf",
+                    "0": 16166,
+                    "1": 10635,
+                    "2": 15975
+                }
+            ]
+        },
+        "2019houston": {
+            "name": "Houston Championship 2019",
+            "short": "2019 (Houston)",
+            "game": "Rover Ruckus",
+            "location": "Houston, Texas",
+            "placement": [
+                {
+                    "place": "w",
+                    "0": 3101,
+                    "1": 5064,
+                    "2": 6547
+                },
+                {
+                    "place": "f",
+                    "0": 9829,
+                    "1": 724,
+                    "2": 11260
+                },
+                {
+                    "place": "sf",
+                    "0": 6929,
+                    "1": 7161,
+                    "2": 11089
+                },
+                {
+                    "place": "sf",
+                    "0": 12599,
+                    "1": 7105,
+                    "2": 7172
+                },
+                {
+                    "place": "qf",
+                    "0": 12611,
+                    "1": 7303,
+                    "2": 3409
+                },
+                {
+                    "place": "qf",
+                    "0": 5921,
+                    "1": 7203,
+                    "2": 10298
+                },
+                {
+                    "place": "qf",
+                    "0": 10219,
+                    "1": 9899,
+                    "2": 5145
+                },
+                {
+                    "place": "qf",
+                    "0": 12808,
+                    "1": 4216,
+                    "2": 11039
+                }
+            ]
+        },
         "2018detroit": {
             "name": "Detroit Championship 2018",
             "short": "2018 (Detroit)",
@@ -751,6 +863,10 @@
             "location": "CA",
             "name": "Doves of Justice"
         },
+        "3101": {
+            "location": "FL",
+            "name": "Boom Bots"
+        },
         "3231": {
             "location": "WA",
             "name": "SyZyGy"
@@ -951,6 +1067,10 @@
             "location": "WA",
             "name": "CyberDaze"
         },
+        "4634": {
+            "location": "VA",
+            "name": "FROGbots"
+        },
         "4717": {
             "location": "FL",
             "name": "Mechromancers"
@@ -1003,6 +1123,10 @@
             "location": "New Zealand",
             "name": "Wingus & Dingus"
         },
+        "5145": {
+            "location": "New Zealand",
+            "name": "The Referees"
+        },
         "5206": {
             "location": "CA",
             "name": "The Knights of Ni"
@@ -1015,6 +1139,10 @@
             "location": "FL",
             "name": "Eagles Robotics Xperience"
         },
+        "5356": {
+            "location": "NY",
+            "name": "Tardis"
+        },
         "5414": {
             "location": "VA",
             "name": "Tri Robotics"
@@ -1022,6 +1150,10 @@
         "5466": {
             "location": "IA",
             "name": "Combustible Lemons"
+        },
+        "5485": {
+            "location": "NY",
+            "name": "GorillaBots"
         },
         "5555": {
             "location": "CA",
@@ -1050,6 +1182,10 @@
         "5939": {
             "location": "OR",
             "name": "Team AFOOFA"
+        },
+        "5921": {
+            "location": "CA",
+            "name": "La Canada Engineering Club"
         },
         "6002": {
             "location": "CA",
@@ -1091,6 +1227,10 @@
             "location": "FL",
             "name": "Neutrinos"
         },
+        "6547": {
+            "location": "KS",
+            "name": "Cobalt Colts"
+        },
         "6922": {
             "location": "China",
             "name": "GMT-E"
@@ -1127,6 +1267,10 @@
             "location": "TX",
             "name": "Hyrda"
         },
+        "7172": {
+            "location": "TX",
+            "name": "Technical Difficulties"
+        },
         "7182": {
             "location": "MD",
             "name": "Mechanical Paradox Cubed"
@@ -1150,6 +1294,10 @@
         "7261": {
             "location": "IA",
             "name": "Omega Robotics"
+        },
+        "7303": {
+            "location": "CA",
+            "name": "RoboAvatars"
         },
         "7351": {
             "location": "IL",
@@ -1187,9 +1335,17 @@
             "location": "PA",
             "name": "BrainSTEM"
         },
+        "8417": {
+            "location": "KY",
+            "name": "'Lectric Legends"
+        },
         "8471": {
             "location": "CA",
             "name": "The Ducks"
+        },
+        "8479": {
+            "location": "MD",
+            "name": "RoboCavs Gold"
         },
         "8565": {
             "location": "TX",
@@ -1219,6 +1375,10 @@
             "location": "MN",
             "name": "Height Differential"
         },
+        "8699": {
+            "location": "CT",
+            "name": "The League of Extraordinary Roboticist"
+        },
         "8995": {
             "location": "AZ",
             "name": "Mogollon Rim Jaegers"
@@ -1239,9 +1399,17 @@
             "location": "CA",
             "name": "Bomb Squad"
         },
+        "9829": {
+            "location": "TX",
+            "name": "MAKbots"
+        },
         "9867": {
             "location": "MA",
             "name": "Evolution Robotics"
+        },
+        "9872": {
+            "location": "PA",
+            "name": "(In)Formal Logic"
         },
         "9899": {
             "location": "CO",
@@ -1250,6 +1418,10 @@
         "9915": {
             "location": "WA",
             "name": "Robo Thunder"
+        },
+        "9956": {
+            "location": "WI",
+            "name": "The Knack"
         },
         "9971": {
             "location": "NJ",
@@ -1267,6 +1439,10 @@
             "location": "CA",
             "name": "Green.Griffins"
         },
+        "10219": {
+            "location": "GA",
+            "name": "Batteries Not Included"
+        },
         "10294": {
             "location": "WI",
             "name": "The Edge"
@@ -1282,6 +1458,14 @@
         "10345": {
             "location": "FL",
             "name": "Royal Blue"
+        },
+        "10435": {
+            "location": "IA",
+            "name": "Circuit Breakers"
+        },
+        "10635": {
+            "location": "IL",
+            "name": "Unknown Element"
         },
         "11039": {
             "location": "CA",
@@ -1311,6 +1495,10 @@
             "location": "AK",
             "name": "The Quantum Mechanics"
         },
+        "11260": {
+            "location": "CO",
+            "name": "Up-A-Creek Robotics"
+        },
         "11316": {
             "location": "IA",
             "name": "Weapons of Mass Construction"
@@ -1326,6 +1514,10 @@
         "11572": {
             "location": "OK",
             "name": "Mouse Spit"
+        },
+        "12231": {
+            "location": "IN",
+            "name": "WarriorTech"
         },
         "12529": {
             "location": "Russia",
@@ -1355,6 +1547,10 @@
             "location": "China",
             "name": "Volt"
         },
+        "14270": {
+            "location": "Romania",
+            "name": "Quantum Robotics"
+        },
         "14276": {
             "location": "Romania",
             "name": "Technogods"
@@ -1366,6 +1562,14 @@
         "14317": {
             "location": "China",
             "name": "So7en-X"
+        },
+        "15975": {
+            "location": "Romania",
+            "name": "ROBOTX HUNEDOARA"
+        },
+        "16166": {
+            "location": "Romania",
+            "name": "Watt's Up"
         }
     },
     "locations": {
